@@ -19,6 +19,13 @@
     NY: { emoji: "🗽", name: "Empire Army" },
   };
   var TIMER_MS = 20000;
+  var ADVANCE_CORRECT_MS = 2600;
+  var ADVANCE_WRONG_MS = 4500;
+
+  // Reduced-motion gate (H, M4). Confetti/flourish are skipped when true.
+  function reducedMotion() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
 
   // ---------------- Tiny DOM helpers ----------------
   function $(id) { return document.getElementById(id); }
@@ -37,6 +44,51 @@
 
   function fmt(n) {
     try { return Number(n).toLocaleString("en-US"); } catch (e) { return String(n); }
+  }
+
+  // Count a number up (B, F). Calls render(value) each frame; ease-out.
+  function tweenNumber(from, to, durationMs, render) {
+    from = Number(from) || 0; to = Number(to) || 0;
+    if (reducedMotion() || durationMs <= 0 || from === to) { render(to); return; }
+    var start = null;
+    function step(ts) {
+      if (start == null) start = ts;
+      var t = Math.min(1, (ts - start) / durationMs);
+      var eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+      render(Math.round(from + (to - from) * eased));
+      if (t < 1) requestAnimationFrame(step);
+      else render(to);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // Confetti / cannon burst (H). Spawns emoji particles from a point.
+  // wide=true → full-width burst (rank-up / perfect campaign).
+  function confettiBurst(x, y, wide) {
+    if (reducedMotion()) return;
+    var armyEmoji = (state.player && ARMY[state.player.army]) ? ARMY[state.player.army].emoji : "🔔";
+    var pool = ["⚔️", "🎖️", "🎉", armyEmoji];
+    var count = wide ? 18 : 14;
+    for (var i = 0; i < count; i++) {
+      var piece = document.createElement("span");
+      piece.className = "confetti-piece";
+      piece.textContent = pool[Math.floor(Math.random() * pool.length)];
+      var originX = wide ? Math.random() * window.innerWidth : x + (Math.random() - 0.5) * 40;
+      var ang = (-Math.PI / 2) + (Math.random() - 0.5) * (wide ? Math.PI * 0.9 : Math.PI * 0.7);
+      var dist = 60 + Math.random() * (wide ? 130 : 90);
+      var dx = Math.cos(ang) * dist;
+      var dy = Math.sin(ang) * dist + 120; // gravity pulls down after the toss
+      piece.style.left = originX + "px";
+      piece.style.top = y + "px";
+      piece.style.setProperty("--dx", dx.toFixed(0) + "px");
+      piece.style.setProperty("--dy", dy.toFixed(0) + "px");
+      piece.style.setProperty("--rot", (Math.random() * 720 - 360).toFixed(0) + "deg");
+      piece.style.animationDelay = (Math.random() * 0.12).toFixed(2) + "s";
+      piece.addEventListener("animationend", function () {
+        if (this.parentNode) this.parentNode.removeChild(this);
+      });
+      document.body.appendChild(piece);
+    }
   }
 
   function showScreen(name) {
@@ -106,8 +158,16 @@
 
     function refresh() {
       submit.disabled = !(nameInput.value.trim().length >= 1 && pickedArmy);
+      // Hint hides once the muster roll can be signed (L).
+      var hint = $("enlist-hint");
+      if (hint) hint.classList.toggle("hidden", !submit.disabled);
     }
     nameInput.addEventListener("input", refresh);
+
+    // Enter in the name field signs the roll when enabled (L).
+    nameInput.addEventListener("keydown", function (ev) {
+      if (ev.key === "Enter" && !submit.disabled) { ev.preventDefault(); submit.click(); }
+    });
 
     document.querySelectorAll(".army-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -143,6 +203,8 @@
         b.classList.toggle("selected", b.getAttribute("data-army") === pickedArmy);
       });
       $("enlist-submit").disabled = false;
+      var hint = $("enlist-hint");
+      if (hint) hint.classList.add("hidden");
     }
     showScreen("enlist");
   }
@@ -172,6 +234,8 @@
     $("enlist-name").value = "";
     document.querySelectorAll(".army-btn").forEach(function (b) { b.classList.remove("selected"); });
     $("enlist-submit").disabled = true;
+    var hint = $("enlist-hint");
+    if (hint) hint.classList.remove("hidden");
     toast("The records were reset. Re-enlist to rejoin the war.");
     showScreen("enlist");
   }
@@ -222,6 +286,11 @@
     var pos = front.position != null ? front.position : 50;
     $("front-fill-phi").style.width = pos + "%";
     $("front-marker").style.left = pos + "%";
+
+    // 7-day totals inline under the bar (I): "🔔 3,420 — 2,180 🗽".
+    var seven = front.sevenDay || { PHI: 0, NY: 0 };
+    $("front-total-phi").textContent = "🔔 " + fmt(seven.PHI || 0);
+    $("front-total-ny").textContent = fmt(seven.NY || 0) + " 🗽";
     var label = $("front-label");
     clear(label);
     label.appendChild(document.createTextNode("The front currently lies at "));
@@ -346,11 +415,15 @@
   }
 
   // ---------------- Battle ----------------
+  var skirmishInFlight = false;
   function startSkirmish() {
     if (!state.player) { showScreen("enlist"); return; }
+    if (skirmishInFlight) return; // guard double-taps (J)
+    skirmishInFlight = true;
     var btn = $("start-skirmish");
     btn.disabled = true;
     api("/api/battle/start", { method: "POST", body: { playerId: state.player.id } }).then(function (data) {
+      skirmishInFlight = false;
       btn.disabled = false;
       state.battle = {
         battleId: data.battleId,
@@ -359,6 +432,9 @@
         index: 0,
         answered: {},
         results: [],
+        score: 0,        // running points landed (B)
+        shownScore: 0,   // last value painted into the header
+        streak: 0,       // consecutive correct (C)
       };
       if (state.battle.questions.length === 0) {
         toast("🪖 The armory is empty. Try again shortly.");
@@ -366,8 +442,10 @@
       }
       showScreen("battle");
       $("battle-name").textContent = "The Battle of " + data.battleName;
-      renderQuestion();
+      $("battle-score").textContent = "⚡ 0";
+      showBattleIntro(data.battleName);
     }).catch(function (err) {
+      skirmishInFlight = false;
       btn.disabled = false;
       if (err.code === "armory_stocking") {
         toast(err.message);
@@ -379,6 +457,40 @@
     });
   }
 
+  // Battle intro overlay (A). Teaches the rules and gates the first question +
+  // timer behind a tap so the fuse never ambushes the player on arrival.
+  function showBattleIntro(battleName) {
+    var overlay = $("battle-intro");
+    $("intro-battle").textContent = ("The Battle of " + battleName).toUpperCase();
+
+    // Clear stale previous-battle content so it isn't faintly visible behind the
+    // dim overlay when "ANOTHER SKIRMISH" reuses the battle screen.
+    $("q-prompt").textContent = "";
+    clear($("choices"));
+    hide("feedback");
+    hide("enemy-badge");
+    var fill = $("fuse-fill");
+    fill.style.transition = "none";
+    fill.style.transform = "scaleX(1)";
+    $("fuse-spark").style.left = "100%";
+    fill.parentElement.classList.remove("low");
+
+    show("battle-intro");
+
+    var opened = false;
+    function openFire(ev) {
+      if (opened) return;
+      opened = true;
+      if (ev) ev.stopPropagation();
+      overlay.onclick = null;
+      $("intro-open-fire").onclick = null;
+      hide("battle-intro");
+      renderQuestion(); // only now does the fuse start
+    }
+    overlay.onclick = openFire;
+    $("intro-open-fire").onclick = openFire;
+  }
+
   function renderQuestion() {
     var b = state.battle;
     var q = b.questions[b.index];
@@ -388,6 +500,9 @@
     $("battle-progress").textContent = (b.index + 1) + " / " + b.questions.length;
     $("cat-badge").textContent = q.categoryLabel || categoryLabel(q.category);
     $("q-prompt").textContent = q.prompt;
+
+    // Espionage foreshadowing (D): flag enemy-city questions before answering.
+    renderEnemyBadge(q);
 
     var choicesBox = $("choices");
     clear(choicesBox);
@@ -402,6 +517,21 @@
 
   function categoryLabel(cat) {
     return { trivia: "TRIVIA", quote: "WHO SAID IT", headline: "REAL OR FAKE HEADLINE", stat: "STAT DUEL AT DAWN" }[cat] || "TRIVIA";
+  }
+
+  // Enemy-intel badge (D). PHI's enemy is NY and vice versa; "BOTH" never counts.
+  function renderEnemyBadge(q) {
+    var badge = $("enemy-badge");
+    if (!badge) return;
+    var army = state.player && state.player.army;
+    var enemyCity = army === "PHI" ? "NY" : (army === "NY" ? "PHI" : null);
+    if (enemyCity && q.city === enemyCity) {
+      badge.classList.remove("foe-ny", "foe-phi");
+      badge.classList.add(enemyCity === "NY" ? "foe-ny" : "foe-phi");
+      badge.classList.remove("hidden");
+    } else {
+      badge.classList.add("hidden");
+    }
   }
 
   function startTimer() {
@@ -476,6 +606,15 @@
         prompt: q.prompt,
         correctAnswer: q.choices[res.answerIndex],
       });
+
+      // Running score (B) + streak (C).
+      if (res.correct) {
+        b.score += (res.points || 0);
+        b.streak += 1;
+      } else {
+        b.streak = 0;
+      }
+      updateBattleScore(b);
       showFeedback(res, isTimeout);
     }).catch(function (err) {
       // Re-enable on failure so they can retry.
@@ -493,6 +632,10 @@
 
     if (res.correct) {
       fb.classList.add("correct-fb");
+      // Streak fire (C): 3+ consecutive correct gets a prominent banner.
+      if (state.battle && state.battle.streak >= 3) {
+        inner.appendChild(el("div", { className: "fb-streak", text: "🔥 " + state.battle.streak + " IN A ROW" }));
+      }
       var pts = el("span", { className: "fb-points good", text: "+" + res.points + " — A HIT!" });
       inner.appendChild(pts);
       inner.appendChild(el("div", { text: res.flavor || "A clean hit." }));
@@ -511,10 +654,44 @@
     }
     show("feedback");
 
-    // Auto-advance after 2.5s; tap to skip.
+    // Variable auto-advance (E): readable obituaries get more time; tap skips.
+    var advanceMs = res.correct ? ADVANCE_CORRECT_MS : ADVANCE_WRONG_MS;
+
+    // Draining progress strip (E): pure CSS animation, duration set from JS.
+    var drain = $("fb-drain");
+    if (drain) {
+      drain.classList.remove("run");
+      drain.style.animationDuration = advanceMs + "ms";
+      void drain.offsetWidth; // restart the animation
+      drain.classList.add("run");
+    }
+
+    // Small confetti burst near the feedback box on every correct answer (H).
+    if (res.correct && !reducedMotion()) {
+      var r = fb.getBoundingClientRect();
+      confettiBurst(r.left + r.width / 2, r.top + 10, false);
+    }
+
     if (state.advanceTimeout) clearTimeout(state.advanceTimeout);
-    state.advanceTimeout = setTimeout(advance, 2500);
+    state.advanceTimeout = setTimeout(advance, advanceMs);
     fb.onclick = function () { advance(); };
+  }
+
+  // Running-score header (B): fast count-up tween + bump pulse on change.
+  function updateBattleScore(b) {
+    var elScore = $("battle-score");
+    if (!elScore) return;
+    var from = b.shownScore || 0;
+    var to = b.score || 0;
+    b.shownScore = to;
+    if (to !== from) {
+      elScore.classList.remove("bump");
+      void elScore.offsetWidth;
+      elScore.classList.add("bump");
+    }
+    tweenNumber(from, to, 400, function (v) {
+      elScore.textContent = "⚡ " + fmt(v);
+    });
   }
 
   function advance() {
@@ -604,7 +781,10 @@
     if (actions) actions.classList.remove("hidden");
 
     $("report-battle").textContent = "The Battle of " + (data.battleName || "—");
-    $("report-score").textContent = fmt(data.score || 0);
+    // Score count-up 0 → final, ease-out ~900ms (F).
+    tweenNumber(0, data.score || 0, 900, function (v) {
+      $("report-score").textContent = fmt(v);
+    });
     $("report-correct").textContent = (data.correctCount || 0) + " / " + (data.total || 10) + " correct";
     $("report-front").textContent = data.frontDelta ? data.frontDelta.text : "";
 
@@ -616,13 +796,25 @@
       esp.classList.add("hidden");
     }
 
-    // Rank-up moment
+    // Perfect campaign (G) takes the banner; otherwise the rank-up moment.
     var banner = $("rankup-banner");
-    if (data.rankUp) {
+    var total = data.total || 10;
+    var perfect = (data.correctCount || 0) === total && total > 0;
+    var celebrate = false;
+    if (perfect) {
+      banner.textContent = "🎖️ A PERFECT CAMPAIGN — " + total + "/" + total + ". The enemy generals are resigning.";
+      banner.classList.remove("hidden");
+      celebrate = true;
+    } else if (data.rankUp) {
       banner.textContent = "🎖️ FIELD PROMOTION! You are now a " + (data.rankUp.to || "").toUpperCase() + " " + (data.rankUp.insignia || "");
       banner.classList.remove("hidden");
+      celebrate = true;
     } else {
       banner.classList.add("hidden");
+    }
+    // Full-width confetti burst for rank-up / perfect campaign (H).
+    if (celebrate && !reducedMotion()) {
+      setTimeout(function () { confettiBurst(window.innerWidth / 2, 90, true); }, 250);
     }
 
     // Casualties
@@ -673,10 +865,25 @@
   }
 
   function initCopyButtons() {
-    $("copy-dispatch").addEventListener("click", function () {
+    var copyDispatch = $("copy-dispatch");
+    copyDispatch.addEventListener("click", function () {
       if (!lastDispatch) { toast("No dispatch to copy yet."); return; }
       copyText(lastDispatch, "📜 Dispatch copied ✔ — paste it into the chat!");
     });
+
+    // Native share (K): only when supported. Becomes the primary action; the
+    // copy button drops to a secondary ghost style (already set in HTML).
+    var shareBtn = $("share-dispatch");
+    if (shareBtn && navigator.share) {
+      shareBtn.classList.remove("hidden");
+      shareBtn.addEventListener("click", function () {
+        if (!lastDispatch) { toast("No dispatch to share yet."); return; }
+        navigator.share({ text: lastDispatch }).catch(function (err) {
+          if (err && err.name === "AbortError") return; // user canceled — ignore
+          copyText(lastDispatch, "📜 Dispatch copied ✔ — paste it into the chat!");
+        });
+      });
+    }
     $("copy-report").addEventListener("click", function () {
       // Copy SYNCHRONOUSLY from the prefetched text so iOS Safari keeps us
       // inside the click gesture window (see refreshWarReport).
@@ -700,6 +907,8 @@
     initCopyButtons();
 
     $("start-skirmish").addEventListener("click", startSkirmish);
+    var rematch = $("rematch");
+    if (rematch) rematch.addEventListener("click", startSkirmish); // one-tap rematch (J)
     $("back-to-warroom").addEventListener("click", enterWarRoom);
     $("warroom-reenlist").addEventListener("click", openReenlist);
     var retryFinish = $("retry-finish");

@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rye&family=IM+Fell+English:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%94%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
   <!-- Toast / telegraph error -->
@@ -44,6 +45,14 @@
           </button>
         </div>
         <button id="enlist-submit" class="seal-btn" type="button" disabled>✒️ SIGN THE MUSTER ROLL</button>
+        <p class="enlist-hint" id="enlist-hint">Sign your name and choose a side, soldier.</p>
+
+        <div class="roe-block">
+          <div class="roe-head">⚜ RULES OF ENGAGEMENT ⚜</div>
+          <div class="roe-line">Fight 10-round trivia skirmishes</div>
+          <div class="roe-line">Your points push the front line across New Jersey</div>
+          <div class="roe-line">Know the enemy: their questions pay a spy bonus</div>
+        </div>
       </div>
     </section>
 
@@ -64,6 +73,12 @@
           <div class="front-fill-phi" id="front-fill-phi"></div>
           <div class="front-marker" id="front-marker"><span class="front-flag">⚔️</span></div>
         </div>
+        <div class="front-totals" id="front-totals">
+          <span class="front-total phi" id="front-total-phi">🔔 —</span>
+          <span class="front-total-dash">—</span>
+          <span class="front-total ny" id="front-total-ny">— 🗽</span>
+        </div>
+        <div class="front-totals-cap">last 7 days decide the front</div>
         <p class="front-label" id="front-label">The front currently lies at <strong>TRENTON</strong>.</p>
       </div>
 
@@ -109,13 +124,34 @@
     <section id="screen-battle" class="screen hidden">
       <div class="battle-head">
         <div class="battle-name" id="battle-name">The Battle of —</div>
-        <div class="battle-progress" id="battle-progress">1 / 10</div>
+        <div class="battle-head-right">
+          <span class="battle-score" id="battle-score">⚡ 0</span>
+          <span class="battle-progress" id="battle-progress">1 / 10</span>
+        </div>
+      </div>
+
+      <!-- Battle intro: orders from HQ -->
+      <div id="battle-intro" class="battle-intro hidden">
+        <div class="intro-telegram" id="intro-telegram">
+          <div class="intro-stamp">✉️ ORDERS FROM HQ</div>
+          <div class="intro-battle" id="intro-battle">THE BATTLE OF —</div>
+          <div class="intro-rules">
+            <div class="intro-rule">10 rounds · 20 seconds each</div>
+            <div class="intro-rule">Answer FAST — up to 200 pts a round</div>
+            <div class="intro-rule">🕵️ Enemy questions pay +50 espionage</div>
+          </div>
+          <button id="intro-open-fire" class="seal-btn intro-seal" type="button">⚔️ OPEN FIRE</button>
+          <div class="intro-taphint">tap anywhere to begin ▸</div>
+        </div>
       </div>
 
       <div class="fuse-rail"><div class="fuse-fill" id="fuse-fill"></div><span class="fuse-spark" id="fuse-spark">🔥</span></div>
 
       <div class="parchment-card question-card">
-        <div class="cat-badge" id="cat-badge">TRIVIA</div>
+        <div class="badge-row">
+          <span class="cat-badge" id="cat-badge">TRIVIA</span>
+          <span class="enemy-badge hidden" id="enemy-badge">🕵️ ENEMY INTEL — +50 IF RIGHT</span>
+        </div>
         <div class="q-prompt" id="q-prompt"></div>
         <div class="choices" id="choices"></div>
       </div>
@@ -124,6 +160,7 @@
       <div class="feedback hidden" id="feedback">
         <div class="feedback-inner" id="feedback-inner"></div>
         <div class="tap-hint">tap to continue ▸</div>
+        <div class="fb-drain" id="fb-drain"></div>
       </div>
     </section>
 
@@ -155,7 +192,9 @@
       </div>
 
       <div id="report-actions">
-        <button id="copy-dispatch" class="seal-btn" type="button">📜 COPY WAR DISPATCH</button>
+        <button id="rematch" class="seal-btn" type="button">⚔️ ANOTHER SKIRMISH</button>
+        <button id="share-dispatch" class="seal-btn share-btn hidden" type="button">📨 SEND TO THE CHAT</button>
+        <button id="copy-dispatch" class="ghost-btn" type="button">📜 COPY WAR DISPATCH</button>
         <button id="back-to-warroom" class="ghost-btn" type="button">⮌ RETURN TO WAR ROOM</button>
       </div>
     </section>
