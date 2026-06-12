@@ -51,16 +51,16 @@
     "id": "trivia-004",
     "category": "trivia",
     "city": "NY",
-    "prompt": "Whose iconic Game 7 limp-out gave the Knicks their 1970 title spark against the Lakers?",
+    "prompt": "Which team did Jeremy Lin drop 38 points on during the Linsanity run in February 2012?",
     "choices": [
-      "Willis Reed",
-      "Walt Frazier",
-      "Dave DeBusschere",
-      "Bill Bradley"
+      "Los Angeles Lakers",
+      "Boston Celtics",
+      "Miami Heat",
+      "Toronto Raptors"
     ],
     "answer_index": 0,
-    "flavor": "Correct. Willis Reed dragged a torn thigh out of the tunnel, hit his first two shots, and the Garden has never been louder since.",
-    "roast": "☠️ Did not know Willis Reed limped out of the tunnel in Game 7, 1970. It is the most sacred memory the Knicks have. Guard it better.",
+    "flavor": "Correct. 38 on Kobe and the Lakers at the Garden. Kobe claimed before the game he didn't know who Lin was. He knew by the fourth quarter.",
+    "roast": "☠️ Did not know Lin torched the Lakers for 38 with Kobe watching. The signature Linsanity night. Deactivated.",
     "difficulty": 2
   },
   {
@@ -83,17 +83,17 @@
     "id": "trivia-006",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which Sixers guard was the No. 1 overall pick in 1996 and became the smallest scoring champion in NBA history?",
+    "prompt": "In 2017 the Sixers traded UP from No. 3 to No. 1 to draft Markelle Fultz. Which team did they make that swap with?",
     "choices": [
-      "Moses Malone",
-      "Julius Erving",
-      "Allen Iverson",
-      "Charles Barkley"
+      "Sacramento Kings",
+      "Boston Celtics",
+      "Phoenix Suns",
+      "Orlando Magic"
     ],
-    "answer_index": 2,
-    "flavor": "Correct. Allen Iverson, the No. 1 pick in 1996, smallest scoring champ the league had seen, and a Philadelphia saint.",
-    "roast": "☠️ Could not identify Allen Iverson. The Answer. The franchise. The reason South Philly still chants his name.",
-    "difficulty": 2
+    "answer_index": 1,
+    "flavor": "Correct. Philly sent the No. 3 pick plus a future first to Boston to jump up to No. 1 and take Fultz. Boston used the slide to grab Jayson Tatum. That one still hurts.",
+    "roast": "☠️ Forgot the Sixers traded UP with Boston for the Fultz pick — and Boston turned the slide into Jayson Tatum. The Process giveth, Danny Ainge taketh.",
+    "difficulty": 3
   },
   {
     "id": "trivia-007",
@@ -109,10 +109,26 @@
     "answer_index": 1,
     "flavor": "Correct. Carmelo Anthony came home to New York, and the Knicks gave up half the roster to do it. Worth it? The standings say no.",
     "roast": "☠️ Forgot the Carmelo Anthony trade saga of 2011. The Knicks mortgaged everything for Melo and you can't even remember it happened.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-008",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which forward did the Sixers send to Minnesota, along with Dario Saric, to acquire Jimmy Butler in November 2018?",
+    "choices": [
+      "T.J. McConnell",
+      "Markelle Fultz",
+      "Robert Covington",
+      "JJ Redick"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Philly sent Robert Covington and Dario Saric (plus more) to Minnesota for Jimmy Butler. Butler's run ended with that fateful Game 7 buzzer-beater against Kawhi.",
+    "roast": "☠️ Forgot Robert Covington headlined the Jimmy Butler trade. RoCo and Saric out, Jimmy in, then four bounces off the rim and out of the playoffs. Tragic and forgotten.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-009",
     "category": "trivia",
     "city": "PHI",
     "prompt": "In which year did the Philadelphia 76ers win their most recent NBA championship?",
@@ -128,35 +144,19 @@
     "difficulty": 2
   },
   {
-    "id": "trivia-009",
-    "category": "trivia",
-    "city": "NY",
-    "prompt": "Entering the 2025-26 season, how many NBA championships had the New York Knicks won?",
-    "choices": [
-      "0",
-      "6",
-      "4",
-      "2"
-    ],
-    "answer_index": 3,
-    "flavor": "Correct. Two — 1970 and 1973, both behind Willis Reed and Clyde. Every ring since has had to be imported.",
-    "roast": "☠️ Got the Knicks' classic ring count wrong. It is exactly two — 1970 and 1973, both in the Nixon era.",
-    "difficulty": 2
-  },
-  {
     "id": "trivia-010",
     "category": "trivia",
     "city": "NY",
-    "prompt": "Which 2013 Nets trade sent multiple first-round picks to Boston for aging stars?",
+    "prompt": "The 2013 Nets trade sent multiple first-round picks to Boston for Kevin Garnett and Paul Pierce. Which THIRD veteran also came to Brooklyn in that deal?",
     "choices": [
-      "The Durant trade",
-      "The Harden trade",
-      "The Garnett-Pierce trade",
-      "The Vince Carter trade"
+      "Ray Allen",
+      "Rajon Rondo",
+      "Jason Terry",
+      "Kendrick Perkins"
     ],
     "answer_index": 2,
-    "flavor": "Correct. Kevin Garnett and Paul Pierce for a war chest of picks Boston used to rebuild. One of the most lopsided trades in NBA history.",
-    "roast": "☠️ Forgot the Nets handing Boston the picks that built a contender. Brooklyn bet the future on old legs and lost the bet.",
+    "flavor": "Correct. Jason Terry came over with KG and Pierce. Brooklyn gave up 2014, 2016 and 2018 first-rounders (and a swap) — the picks that helped Boston build a contender.",
+    "roast": "☠️ Forgot Jason Terry was in the KG-Pierce haul. Brooklyn bet the future on old legs and handed Boston the lottery. Disrespectful.",
     "difficulty": 3
   },
   {
@@ -195,48 +195,48 @@
     "id": "trivia-013",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which guard did the Sixers draft No. 1 overall in 2017, only to watch his jump shot mysteriously vanish?",
+    "prompt": "On 2013 draft night, Sam Hinkie traded Jrue Holiday to New Orleans for a future first plus which big man, taken No. 6 overall?",
     "choices": [
-      "Ben Simmons",
-      "Dario Saric",
-      "Jaylen Brown",
-      "Markelle Fultz"
+      "Nikola Vucevic",
+      "Jrue Holiday",
+      "Michael Carter-Williams",
+      "Nerlens Noel"
     ],
     "answer_index": 3,
-    "flavor": "Correct. Markelle Fultz, the No. 1 pick of 2017 who forgot how to shoot. The Process is not always kind.",
-    "roast": "☠️ Slipped up on Markelle Fultz, the 2017 No. 1 pick whose shot disappeared. Even the misfires are part of the Process.",
+    "flavor": "Correct. New Orleans drafted Nerlens Noel sixth and Hinkie pounced — Jrue Holiday out, Noel plus a future first in. Peak Process asset-shuffling.",
+    "roast": "☠️ Forgot Nerlens Noel, the first true Process draft chip. Philly turned Jrue Holiday into Noel and a pick. The asset graveyard remembers.",
     "difficulty": 3
   },
   {
     "id": "trivia-014",
     "category": "trivia",
     "city": "NY",
-    "prompt": "What is the home arena of the New York Knicks?",
+    "prompt": "Which Knick led the team in scoring during the 1998-99 lockout season Finals run?",
     "choices": [
-      "Barclays Center",
-      "Prudential Center",
-      "Madison Square Garden",
-      "Wells Fargo Center"
+      "Latrell Sprewell",
+      "Allan Houston",
+      "Patrick Ewing",
+      "Larry Johnson"
     ],
-    "answer_index": 2,
-    "flavor": "Correct. Madison Square Garden — the World's Most Famous Arena, where the tickets cost a mortgage payment and the heartbreak is complimentary.",
-    "roast": "☠️ Did not know the Knicks play at Madison Square Garden. The most famous arena on earth. Pack your kit and go home.",
-    "difficulty": 1
+    "answer_index": 0,
+    "flavor": "Correct. Latrell Sprewell paced the eighth-seeded Knicks at 20.4 a game that postseason — and 26 a night in the Finals against the Spurs. Spree carried the scoring load.",
+    "roast": "☠️ Guessed Houston, didn't you? His runner beat Miami, but Latrell Sprewell led the '99 Knicks in playoff scoring — 26 a game in the Finals. Blanked on the lead scorer of the shock eighth seed.",
+    "difficulty": 3
   },
   {
     "id": "trivia-015",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "As of 2025, what is the current name of the South Philly arena the Sixers and Flyers share?",
+    "prompt": "Who was the head coach of the Allen Iverson-led Sixers team that reached the 2001 NBA Finals and won Coach of the Year?",
     "choices": [
-      "Wells Fargo Center",
-      "Xfinity Mobile Arena",
-      "Wachovia Center",
-      "CoreStates Center"
+      "Maurice Cheeks",
+      "Doug Collins",
+      "Jim O'Brien",
+      "Larry Brown"
     ],
-    "answer_index": 1,
-    "flavor": "Correct. The Wells Fargo deal expired and the building became Xfinity Mobile Arena in August 2025. Fifth name, same warm South Philly boos.",
-    "roast": "☠️ Still calling it the Wells Fargo Center. The sign changed to Xfinity Mobile Arena in August 2025, soldier. Read the dispatches.",
+    "answer_index": 3,
+    "flavor": "Correct. Larry Brown took Coach of the Year in 2001 and coaxed a Finals run out of Iverson and a roster of role players and defenders. The original Iverson whisperer.",
+    "roast": "☠️ Couldn't name Larry Brown, the Hall of Fame coach of the 2001 Finals Sixers. He and AI fought constantly and reached the Finals anyway. Benched.",
     "difficulty": 2
   },
   {
@@ -259,17 +259,17 @@
     "id": "trivia-017",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which team did the Eagles defeat to win Super Bowl LII in the 2017 season?",
+    "prompt": "Who threw the touchdown pass to Nick Foles on the Philly Special in Super Bowl LII?",
     "choices": [
-      "Seattle Seahawks",
-      "Atlanta Falcons",
-      "Kansas City Chiefs",
-      "New England Patriots"
+      "Corey Clement",
+      "Trey Burton",
+      "Zach Ertz",
+      "Nelson Agholor"
     ],
-    "answer_index": 3,
-    "flavor": "Correct. The Eagles beat Tom Brady's Patriots 41-33 for the first Lombardi in franchise history. Fly Eagles Fly.",
-    "roast": "☠️ Did not know the Eagles beat the Patriots in Super Bowl LII. Philadelphia's first Lombardi and you fumbled the memory.",
-    "difficulty": 1
+    "answer_index": 1,
+    "flavor": "Correct. Corey Clement took the direct snap and pitched it to tight end Trey Burton, who lofted it to a wide-open Foles. The gutsiest call in franchise history.",
+    "roast": "☠️ Didn't know Trey Burton threw the Philly Special TD. Everyone remembers Foles catching it — somebody had to throw it. That somebody wasn't you.",
+    "difficulty": 3
   },
   {
     "id": "trivia-018",
@@ -285,23 +285,23 @@
     "answer_index": 2,
     "flavor": "Correct. Mark Sanchez ran face-first into his own lineman's backside and fumbled. It aired on Thanksgiving. America gave thanks.",
     "roast": "☠️ Could not name the Butt Fumble culprit. Mark Sanchez. The most New York Jets play in New York Jets history.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-019",
     "category": "trivia",
-    "city": "NY",
-    "prompt": "Which Giants QB led two Super Bowl upsets over the Patriots?",
+    "city": "BOTH",
+    "prompt": "In the 2010 'Miracle at the New Meadowlands,' which Eagles return man scored a walk-off punt-return touchdown to stun the Giants?",
     "choices": [
-      "Phil Simms",
-      "Eli Manning",
-      "Kerry Collins",
-      "Daniel Jones"
+      "Brian Westbrook",
+      "DeSean Jackson",
+      "LeSean McCoy",
+      "Jeremy Maclin"
     ],
     "answer_index": 1,
-    "flavor": "Correct. Eli Manning, twice the Patriots' nightmare, including the Helmet Catch season of 2007.",
-    "roast": "☠️ Forgot Eli Manning beat the Patriots in two Super Bowls. The Giants' whole personality and you blanked.",
-    "difficulty": 2
+    "flavor": "Correct. DeSean Jackson fielded the punt with no time left, paused at the goal line to taunt, and walked it in as the Eagles erased a 21-point fourth quarter at the Giants' house.",
+    "roast": "☠️ Forgot DeSean Jackson's walk-off punt return on the Giants in 2010. The Miracle at the New Meadowlands. A New Jersey humiliation for New York and you missed it.",
+    "difficulty": 3
   },
   {
     "id": "trivia-020",
@@ -317,7 +317,7 @@
     "answer_index": 0,
     "flavor": "Correct. David Tyree pinned the ball to his helmet to keep the drive alive. Plaxico Burress caught the winner soon after.",
     "roast": "☠️ Did not know David Tyree made the Helmet Catch. The most improbable grab in Super Bowl history. Pressed it right to his crown.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-021",
@@ -355,33 +355,33 @@
     "id": "trivia-023",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "In which year did the Phillies win the World Series over the Tampa Bay Rays?",
+    "prompt": "Which Phillies closer recorded the final out of the 2008 World Series, capping a perfect-in-saves season?",
     "choices": [
-      "2007",
-      "2008",
-      "2009",
-      "2011"
+      "Brad Lidge",
+      "Ryan Madson",
+      "Tom Gordon",
+      "J.C. Romero"
     ],
-    "answer_index": 1,
-    "flavor": "Correct. 2008. Brad Lidge was perfect all year, and the city got its first title in 25 years. Chase Utley said the rest.",
-    "roast": "☠️ Did not know the Phillies beat the Rays in 2008. Philadelphia's most recent World Series. Shameful.",
+    "answer_index": 0,
+    "flavor": "Correct. Brad Lidge went 48-for-48 in save chances in 2008, then struck out Eric Hinske to end it and dropped to his knees. Perfect season, perfect ending.",
+    "roast": "☠️ Didn't know Brad Lidge slammed the door on the 2008 title. 48-for-48, then the strikeout heard round Philadelphia. Blown save on your part.",
     "difficulty": 2
   },
   {
     "id": "trivia-024",
     "category": "trivia",
-    "city": "NY",
-    "prompt": "How many World Series titles have the New York Yankees won — the most in MLB history?",
+    "city": "BOTH",
+    "prompt": "Which New York team swept the Phillies' 'Whiz Kids' in the 1950 World Series?",
     "choices": [
-      "27",
-      "23",
-      "20",
-      "30"
+      "Brooklyn Dodgers",
+      "New York Giants",
+      "New York Yankees",
+      "New York Mets"
     ],
-    "answer_index": 0,
-    "flavor": "Correct. 27 rings. The Evil Empire's whole identity. They will remind you of all 27, unprompted, forever.",
-    "roast": "☠️ Botched the Yankees' ring count. It's 27 — the number every Yankees fan tattoos on their soul. The Empire is unamused.",
-    "difficulty": 1
+    "answer_index": 2,
+    "flavor": "Correct. The Yankees swept Philadelphia's young 'Whiz Kids' in 1950 — the Phillies' first pennant in 35 years, ended in four straight by the Empire. (The Mets didn't exist yet.)",
+    "roast": "☠️ Didn't know the Yankees swept the 1950 Whiz Kids. New York crushing a Philly pennant dream — the oldest grudge in this war and you slept on it.",
+    "difficulty": 3
   },
   {
     "id": "trivia-025",
@@ -429,7 +429,7 @@
     "answer_index": 1,
     "flavor": "Correct. 1986. The Mets have not won since. Somewhere in Queens, a Mets fan feels a brief and unfamiliar warmth.",
     "roast": "☠️ Did not know the Mets last won in 1986. It has been a long, soggy wait in Flushing. The misery is the brand.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-028",
@@ -461,7 +461,7 @@
     "answer_index": 3,
     "flavor": "Correct. The Broad Street Bullies won back-to-back Stanley Cups in 1974 and 1975, fists first. Still the Flyers' only Cups.",
     "roast": "☠️ Forgot the Broad Street Bullies. The Flyers' only Stanley Cups, won by the meanest team in hockey.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-030",
@@ -477,7 +477,7 @@
     "answer_index": 2,
     "flavor": "Correct. Bernie Parent backstopped both Cup wins, and Kate Smith's anthem became the Flyers' lucky omen.",
     "roast": "☠️ Did not know Bernie Parent. The Hall of Fame goalie behind both Flyers Cups. No. 1 hangs in the rafters.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-031",
@@ -493,22 +493,22 @@
     "answer_index": 1,
     "flavor": "Correct. 1994. Mark Messier guaranteed it, and the Garden chant of 'Now I can die in peace' became legend.",
     "roast": "☠️ Did not know the Rangers won the Cup in 1994. The end of a 54-year curse. The Garden has not stopped reliving it.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-032",
     "category": "trivia",
     "city": "NY",
-    "prompt": "Which New York-area hockey dynasty won four straight Stanley Cups from 1980 to 1983?",
+    "prompt": "Which Ranger opened the scoring in the 3-2 Game 7 win over Vancouver in the 1994 Stanley Cup Final?",
     "choices": [
-      "New York Islanders",
-      "New York Rangers",
-      "New Jersey Devils",
-      "Brooklyn Americans"
+      "Mark Messier",
+      "Brian Leetch",
+      "Adam Graves",
+      "Stephane Matteau"
     ],
-    "answer_index": 0,
-    "flavor": "Correct. The New York Islanders, four Cups in a row, the last true NHL dynasty of that magnitude.",
-    "roast": "☠️ Forgot the Islanders' four-straight Cups in the early 80s. A genuine dynasty out on Long Island. Disrespectful.",
+    "answer_index": 1,
+    "flavor": "Correct. Brian Leetch — the Conn Smythe winner — struck first, Graves made it 2-0, and Messier's goal stood as the Cup-winner while the Rangers survived the final seconds.",
+    "roast": "☠️ Didn't know Leetch, the Conn Smythe winner, struck first in Game 7 of '94. The defenseman who carried the curse-breakers. Iced out.",
     "difficulty": 3
   },
   {
@@ -523,9 +523,9 @@
       "Mark Messier"
     ],
     "answer_index": 3,
-    "flavor": "Correct. Mark Messier called his shot and backed it with a hat trick. The most clutch promise in Rangers history.",
+    "flavor": "Correct. Mark Messier called his shot and backed it with a hat trick against the Devils. The most clutch promise in Rangers history.",
     "roast": "☠️ Did not know Mark Messier's guarantee. The Captain promised a win and delivered three goals. Legendary, forgotten by you.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-034",
@@ -557,7 +557,7 @@
     "answer_index": 1,
     "flavor": "Correct. Lawrence Taylor, LT, No. 56 retired, perhaps the most dominant defensive player the NFL has ever seen.",
     "roast": "☠️ Did not know Lawrence Taylor. LT. No. 56. He invented modern fear for offensive coordinators. Unforgivable.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-036",
@@ -565,15 +565,15 @@
     "city": "NY",
     "prompt": "Which Giants defensive end set what was then the NFL single-season sack record with 22.5 in 2001?",
     "choices": [
-      "Michael Strahan",
       "Osi Umenyiora",
+      "Michael Strahan",
       "Justin Tuck",
       "Jason Pierre-Paul"
     ],
-    "answer_index": 0,
-    "flavor": "Correct. Michael Strahan, 22.5 sacks in 2001 — the NFL record until Myles Garrett's 23 in 2025. Now a morning-show staple.",
+    "answer_index": 1,
+    "flavor": "Correct. Michael Strahan, 22.5 sacks in 2001 — the NFL record for over two decades. Now a morning-show staple.",
     "roast": "☠️ Forgot Michael Strahan's 22.5-sack season. A Giants record and a gap-toothed Hall of Fame career. Sacked again.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-037",
@@ -589,135 +589,135 @@
     "answer_index": 3,
     "flavor": "Correct. LeSean McCoy, 'Shady,' the Eagles' all-time leading rusher before his trade to Buffalo.",
     "roast": "☠️ Could not name LeSean McCoy, the Eagles' all-time leading rusher. Shady ran circles around you.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-038",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "What food is Philadelphia most famous for, sold at Pat's and Geno's in South Philly?",
+    "prompt": "The Eagles traded LeSean McCoy to Buffalo in 2015. Which linebacker did they get back in that one-for-one swap?",
     "choices": [
-      "The bacon-egg-and-cheese",
-      "The hoagie",
-      "The cheesesteak",
-      "The soft pretzel"
+      "Kiko Alonso",
+      "Mychal Kendricks",
+      "DeMeco Ryans",
+      "Nigel Bradham"
     ],
-    "answer_index": 2,
-    "flavor": "Correct. The cheesesteak. Whiz or provolone, that is the only war older than this one.",
-    "roast": "☠️ Did not know Philadelphia's signature food is the cheesesteak. Pat's and Geno's stare across the street at your shame.",
-    "difficulty": 1
+    "answer_index": 0,
+    "flavor": "Correct. Chip Kelly shipped his all-time leading rusher to Buffalo straight up for Kiko Alonso. One of the more baffling Chip-era moves, and there were many.",
+    "roast": "☠️ Forgot the Eagles traded Shady for Kiko Alonso. Chip Kelly dismantled the roster one head-scratcher at a time. You missed this one too.",
+    "difficulty": 3
   },
   {
     "id": "trivia-039",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which convenience store is a beloved Philadelphia institution famous for hoagies and touchscreen ordering?",
+    "prompt": "Which guard did the Sixers draft No. 1 overall in 2017, only to watch his jump shot mysteriously vanish?",
     "choices": [
-      "Sheetz",
-      "Wawa",
-      "Bodega",
-      "QuickChek"
+      "Ben Simmons",
+      "Dario Saric",
+      "Jaylen Brown",
+      "Markelle Fultz"
     ],
-    "answer_index": 1,
-    "flavor": "Correct. Wawa. The unofficial fourth branch of Philadelphia government. Gobble, gobble.",
-    "roast": "☠️ Could not identify Wawa, the holy convenience store of the Delaware Valley. A Sheetz answer is grounds for exile.",
+    "answer_index": 3,
+    "flavor": "Correct. Markelle Fultz, the No. 1 pick of 2017 who forgot how to shoot. The Process is not always kind.",
+    "roast": "☠️ Slipped up on Markelle Fultz, the 2017 No. 1 pick whose shot disappeared. Even the misfires are part of the Process.",
     "difficulty": 1
   },
   {
     "id": "trivia-040",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which fictional boxer ran up the Philadelphia Museum of Art steps in a beloved 1976 film?",
+    "prompt": "Which guard did the Sixers select No. 1 overall in 1996, who became the smallest scoring champion in NBA history?",
     "choices": [
-      "Rocky Balboa",
-      "Apollo Creed",
-      "Jake LaMotta",
-      "Clubber Lang"
+      "Moses Malone",
+      "Julius Erving",
+      "Allen Iverson",
+      "Charles Barkley"
     ],
-    "answer_index": 0,
-    "flavor": "Correct. Rocky Balboa. There's a statue. There are tourists. There is no escaping the theme song.",
-    "roast": "☠️ Did not know Rocky Balboa ran the Art Museum steps. The most Philadelphia thing ever filmed. Yo, that's embarrassing.",
-    "difficulty": 1
+    "answer_index": 2,
+    "flavor": "Correct. Allen Iverson, the No. 1 pick in 1996, smallest scoring champ the league had seen, and a Philadelphia saint.",
+    "roast": "☠️ Could not identify Allen Iverson. The Answer. The franchise. The reason South Philly still chants his name.",
+    "difficulty": 2
   },
   {
     "id": "trivia-041",
     "category": "trivia",
     "city": "NY",
-    "prompt": "What small corner grocery store is a defining feature of New York City neighborhoods, often with a cat?",
+    "prompt": "Which big man did the Knicks draft No. 1 overall in 1985 via the inaugural NBA Draft Lottery?",
     "choices": [
-      "The Wawa",
-      "The five-and-dime",
-      "The deli counter",
-      "The bodega"
+      "Patrick Ewing",
+      "Bill Cartwright",
+      "Charles Oakley",
+      "Kenny Walker"
     ],
-    "answer_index": 3,
-    "flavor": "Correct. The bodega. Open at all hours, the bacon-egg-and-cheese, and yes, the cat is in charge.",
-    "roast": "☠️ Did not know the bodega is the soul of New York street life. The bodega cat is offended on the city's behalf.",
-    "difficulty": 1
+    "answer_index": 0,
+    "flavor": "Correct. Patrick Ewing, the prize of the very first NBA Draft Lottery in 1985 — the one conspiracy theorists insist was frozen.",
+    "roast": "☠️ Didn't know the Knicks landed Ewing No. 1 in the famous 1985 lottery. The frozen-envelope draft. The cornerstone of a generation. Whiffed.",
+    "difficulty": 2
   },
   {
     "id": "trivia-042",
     "category": "trivia",
     "city": "NY",
-    "prompt": "What is the classic New York breakfast sandwich ordered at any bodega?",
+    "prompt": "Which Knicks shooting guard infamously airballed a potential game-winner against the Bulls but was a fan-favorite scorer of the 90s, known for his bench scoring?",
     "choices": [
-      "The cheesesteak",
-      "The pork roll",
-      "The bacon, egg and cheese",
-      "The everything bagel with lox"
+      "John Starks",
+      "Allan Houston",
+      "Hubert Davis",
+      "Greg Anthony"
     ],
-    "answer_index": 2,
-    "flavor": "Correct. The bacon-egg-and-cheese on a roll, salt-pepper-ketchup. Cheesesteak against bacon-egg-and-cheese — that is this war.",
-    "roast": "☠️ Could not name the bacon-egg-and-cheese, New York's breakfast of champions. The bodega will not serve you.",
-    "difficulty": 1
+    "answer_index": 0,
+    "flavor": "Correct. John Starks — from bagging groceries to the Garden. The Dunk over Jordan and Grant, a 1994 Finals Game 6 cold streak, and a permanent place in Knicks hearts.",
+    "roast": "☠️ Forgot John Starks, the undrafted gunner who gave the 90s Knicks their soul. From a grocery store to MSG legend. Bench him.",
+    "difficulty": 3
   },
   {
     "id": "trivia-043",
     "category": "trivia",
     "city": "NY",
-    "prompt": "Which agency operates New York City's subway system?",
+    "prompt": "How many World Series titles have the New York Yankees won — the most in MLB history?",
     "choices": [
-      "SEPTA",
-      "MTA",
-      "PATH",
-      "NJ Transit"
+      "27",
+      "23",
+      "20",
+      "30"
     ],
-    "answer_index": 1,
-    "flavor": "Correct. The MTA runs the subway that never sleeps, never quite arrives on time, and never explains why it's stopped in a tunnel.",
-    "roast": "☠️ Confused the MTA with SEPTA. SEPTA is Philadelphia's. The subway delay you're stuck in is brought to you by the MTA.",
-    "difficulty": 2
+    "answer_index": 0,
+    "flavor": "Correct. 27 rings. The Evil Empire's whole identity. They will remind you of all 27, unprompted, forever.",
+    "roast": "☠️ Botched the Yankees' ring count. It's 27 — the number every Yankees fan tattoos on their soul. The Empire is unamused.",
+    "difficulty": 1
   },
   {
     "id": "trivia-044",
     "category": "trivia",
-    "city": "BOTH",
-    "prompt": "The New York Giants and Jets actually play their home games in which state?",
+    "city": "NY",
+    "prompt": "Which New York-area hockey dynasty won four straight Stanley Cups from 1980 to 1983?",
     "choices": [
-      "New Jersey",
-      "New York",
-      "Connecticut",
-      "Pennsylvania"
+      "New York Islanders",
+      "New York Rangers",
+      "New Jersey Devils",
+      "Brooklyn Americans"
     ],
     "answer_index": 0,
-    "flavor": "Correct. MetLife Stadium sits in East Rutherford, New Jersey — which is, of course, what this war is about.",
-    "roast": "☠️ Believed the Giants and Jets play in New York. They play in New Jersey — which is, of course, what this war is about.",
+    "flavor": "Correct. The New York Islanders, four Cups in a row, the last true NHL dynasty of that magnitude.",
+    "roast": "☠️ Forgot the Islanders' four-straight Cups in the early 80s. A genuine dynasty out on Long Island. Disrespectful.",
     "difficulty": 2
   },
   {
     "id": "trivia-045",
     "category": "trivia",
     "city": "BOTH",
-    "prompt": "Which NHL team plays at the Prudential Center in Newark, New Jersey?",
+    "prompt": "Which Philadelphia team did the New York Islanders beat in the 1980 Stanley Cup Final to launch their four-Cup dynasty?",
     "choices": [
-      "New York Rangers",
-      "New York Islanders",
-      "Philadelphia Flyers",
-      "New Jersey Devils"
+      "Pittsburgh Penguins",
+      "New Jersey Devils",
+      "Boston Bruins",
+      "Philadelphia Flyers"
     ],
     "answer_index": 3,
-    "flavor": "Correct. The New Jersey Devils, three-time Cup champions, sitting right on the contested front line of this very war.",
-    "roast": "☠️ Did not know the Devils play in Newark. They literally hold the front line of New Jersey. Pay attention to the battlefield.",
-    "difficulty": 2
+    "flavor": "Correct. The Islanders beat the Flyers in six (on Bobby Nystrom's overtime winner) to start the dynasty. A New York team ending a Philly Cup run — peak front-line warfare.",
+    "roast": "☠️ Forgot the Islanders beat the FLYERS in the 1980 Final. A New York team crushing a Philly Cup dream and you couldn't even name the victim. Disgraceful.",
+    "difficulty": 3
   },
   {
     "id": "trivia-046",
@@ -749,7 +749,7 @@
     "answer_index": 1,
     "flavor": "Correct. Joel Embiid, drafted No. 3 in 2014, sat two seasons with injury, then arrived and the Process had its centerpiece.",
     "roast": "☠️ Did not know Joel Embiid was the 2014 No. 3 pick. The franchise center the whole Process was waiting on. The Process is disappointed.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-048",
@@ -757,15 +757,15 @@
     "city": "NY",
     "prompt": "Which enforcer of the 90s Knicks, beloved as 'Oak,' protected Patrick Ewing in the paint?",
     "choices": [
-      "Charles Oakley",
       "Anthony Mason",
       "Charles Smith",
+      "Charles Oakley",
       "John Starks"
     ],
-    "answer_index": 0,
-    "flavor": "Correct. Charles Oakley, the muscle of the Pat Riley-era Knicks, beloved enough that his Garden feud made national news.",
+    "answer_index": 2,
+    "flavor": "Correct. Charles Oakley, the muscle of the Pat Riley-era Knicks, beloved enough that his Garden ejection feud made national news.",
     "roast": "☠️ Forgot Charles Oakley, the 90s Knicks enforcer. Oak protected Ewing and the paint. He would not protect your reputation here.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-049",
@@ -797,10 +797,26 @@
     "answer_index": 2,
     "flavor": "Correct. Kevin Durant was traded to Phoenix in February 2023, the final domino in the collapse of the Brooklyn superteam.",
     "roast": "☠️ Forgot Kevin Durant was traded out of Brooklyn in 2023. The superteam imploded spectacularly and you missed the funeral.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "trivia-051",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "In the 2021 blockbuster that brought James Harden to Brooklyn, which young Nets guard was the centerpiece sent to Houston?",
+    "choices": [
+      "Caris LeVert",
+      "Spencer Dinwiddie",
+      "Jarrett Allen",
+      "Rodions Kurucs"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Caris LeVert headlined the package (he was rerouted to Indiana), along with Jarrett Allen and a mountain of picks. Brooklyn went all-in on KD-Kyrie-Harden.",
+    "roast": "☠️ Forgot Caris LeVert headlined the Harden haul. Brooklyn emptied the vault for a superteam that won zero rings. The asset graveyard grows.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-052",
     "category": "trivia",
     "city": "PHI",
     "prompt": "Which Phillies second baseman of the 2008 champions delivered the unprintable 'World champions' parade speech?",
@@ -816,7 +832,7 @@
     "difficulty": 2
   },
   {
-    "id": "trivia-052",
+    "id": "trivia-053",
     "category": "trivia",
     "city": "PHI",
     "prompt": "Which Phillies pitcher threw a regular-season perfect game and a playoff no-hitter in 2010?",
@@ -829,10 +845,10 @@
     "answer_index": 0,
     "flavor": "Correct. Roy Halladay, a regular-season perfect game AND a postseason no-hitter in 2010. A legendary, and bittersweet, season.",
     "roast": "☠️ Did not know Roy Halladay's 2010 perfect game and playoff no-hitter. One of the great pitching seasons ever. Doc deserved better than this.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
-    "id": "trivia-053",
+    "id": "trivia-054",
     "category": "trivia",
     "city": "NY",
     "prompt": "Which Yankees closer wore No. 42 and holds the career saves record?",
@@ -848,7 +864,7 @@
     "difficulty": 2
   },
   {
-    "id": "trivia-054",
+    "id": "trivia-055",
     "category": "trivia",
     "city": "NY",
     "prompt": "Which Yankees outfielder set the AL single-season home run record with 62 in 2022?",
@@ -864,52 +880,36 @@
     "difficulty": 2
   },
   {
-    "id": "trivia-055",
-    "category": "trivia",
-    "city": "PHI",
-    "prompt": "What is the name of the Phillies' beloved, furry, green mascot?",
-    "choices": [
-      "Gritty",
-      "The Phillie Phanatic",
-      "Mr. Met",
-      "The Swoop"
-    ],
-    "answer_index": 1,
-    "flavor": "Correct. The Phillie Phanatic, the chaotic green icon of Citizens Bank Park since 1978. Gritty is the Flyers' menace.",
-    "roast": "☠️ Mixed up the Phillie Phanatic with Gritty. Gritty terrorizes for the Flyers. The Phanatic is the Phillies' green legend.",
-    "difficulty": 2
-  },
-  {
     "id": "trivia-056",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which orange, googly-eyed Flyers mascot debuted in 2018 and became an internet legend?",
+    "prompt": "Which guard, acquired in a 2002 trade and a fan favorite, played alongside Allen Iverson and later coached in the Sixers organization?",
     "choices": [
-      "Gritty",
-      "The Phanatic",
-      "Youppi",
-      "Slapshot"
+      "Eric Snow",
+      "Aaron McKie",
+      "Larry Hughes",
+      "George Lynch"
     ],
-    "answer_index": 0,
-    "flavor": "Correct. Gritty, the chaotic orange menace of the Flyers, instantly adopted as a folk hero of the internet.",
-    "roast": "☠️ Did not know Gritty is the Flyers mascot. The unhinged orange icon born in 2018. He sees this. He's coming.",
-    "difficulty": 1
+    "answer_index": 1,
+    "flavor": "Correct. Aaron McKie won Sixth Man of the Year in 2001 alongside Iverson during the Finals run, then returned to the franchise as an assistant and front-office figure.",
+    "roast": "☠️ Forgot Aaron McKie, the 2001 Sixth Man on the Finals team. The glue guy next to Iverson. The bench remembers, even if you don't.",
+    "difficulty": 3
   },
   {
     "id": "trivia-057",
     "category": "trivia",
     "city": "NY",
-    "prompt": "What is the name of the New York Mets' baseball-headed mascot?",
+    "prompt": "Which forward did the Knicks sign in free agency in 2019 — the offseason their failed pursuit of Kevin Durant and Kyrie Irving was the real story?",
     "choices": [
-      "Homer",
-      "Mettle the Mule",
-      "The Apple",
-      "Mr. Met"
+      "Marcus Morris",
+      "Bobby Portis",
+      "Taj Gibson",
+      "Julius Randle"
     ],
     "answer_index": 3,
-    "flavor": "Correct. Mr. Met, the giant baseball-headed mascot and one of the oldest in all of sports.",
-    "roast": "☠️ Could not name Mr. Met. The baseball-headed face of Queens. Even on his bad days he is more famous than your answer.",
-    "difficulty": 2
+    "flavor": "Correct. Julius Randle signed in 2019 after the Durant-Kyrie dream died and the duo chose Brooklyn instead. Randle later made All-NBA in New York — a rare Knicks free-agency win.",
+    "roast": "☠️ Forgot Julius Randle was the 2019 consolation signing. The Knicks struck out on KD and Kyrie, then quietly landed an All-NBA forward. Pay attention.",
+    "difficulty": 3
   },
   {
     "id": "trivia-058",
@@ -925,22 +925,22 @@
     "answer_index": 2,
     "flavor": "Correct. Pat Riley coached the bruising early-90s Knicks before defecting to Miami to torment them for decades.",
     "roast": "☠️ Did not know Pat Riley coached the 90s Knicks. Slicked-back hair, slow-it-down defense, then off to Miami. Riley remembers.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "trivia-059",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which infamous 1968 incident at an Eagles game involved fans and a stadium Santa Claus?",
+    "prompt": "Which point guard, the 2008 NL MVP, was the longtime leadoff hitter and shortstop of the 2008 champion Phillies?",
     "choices": [
-      "Fans booed the trophy",
-      "Fans threw snowballs at Santa",
-      "Fans stormed the field",
-      "Fans cheered an injury"
+      "Jimmy Rollins",
+      "Chase Utley",
+      "Shane Victorino",
+      "Carlos Ruiz"
     ],
-    "answer_index": 1,
-    "flavor": "Correct. In 1968 Eagles fans pelted a stadium Santa with snowballs. We threw snowballs at Santa and we'd do it again.",
-    "roast": "☠️ Did not know Eagles fans threw snowballs at Santa in 1968. The most Philadelphia origin story imaginable. They'd do it again.",
+    "answer_index": 0,
+    "flavor": "Correct. Jimmy Rollins — J-Roll — the 2007 NL MVP and shortstop who famously called the Phillies 'the team to beat' before they were. The catalyst of the 2008 champions.",
+    "roast": "☠️ Forgot Jimmy Rollins, the MVP shortstop of the 2008 Phillies. He called them the team to beat and made it true. You struck out looking.",
     "difficulty": 2
   },
   {

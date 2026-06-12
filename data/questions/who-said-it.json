@@ -4,9 +4,14 @@
     "category": "quote",
     "city": "PHI",
     "prompt": "\"We sitting here talking about practice. Not a game. Not a game. Not a game. We talking about practice.\"",
-    "choices": ["Julius Erving", "Charles Barkley", "Allen Iverson", "Andre Iguodala"],
+    "choices": [
+      "Julius Erving",
+      "Charles Barkley",
+      "Allen Iverson",
+      "Andre Iguodala"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. We talking about practice. The most famous press conference in Philadelphia history, and it was about PRACTICE.",
+    "flavor": "Correct. Allen Iverson, May 2002 exit interview after the Sixers got bounced by Boston. Said 'practice' over 20 times.",
     "roast": "☠️ Fell at his post unable to identify the AI practice rant. Twenty-plus 'practices' in that presser and you missed all of them.",
     "difficulty": 1
   },
@@ -14,32 +19,47 @@
     "id": "quote-002",
     "category": "quote",
     "city": "PHI",
-    "prompt": "\"Trust the Process\" — the rallying cry tied to which Sixers GM's tank-and-draft strategy?",
-    "choices": ["Bryan Colangelo", "Sam Hinkie", "Daryl Morey", "Elton Brand"],
+    "prompt": "\"A competitive league like the NBA necessitates a zig while our competitors comfortably zag.\" — a line from which Sixers GM's 13-page resignation letter in April 2016?",
+    "choices": [
+      "Bryan Colangelo",
+      "Sam Hinkie",
+      "Daryl Morey",
+      "Elton Brand"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Trust the Process. You clearly did.",
-    "roast": "☠️ Fell at his post, confidently asserting The Process began with Bryan Colangelo. Sam Hinkie has logged off in disgust.",
-    "difficulty": 1
+    "flavor": "Correct. Sam Hinkie — the letter quotes Warren Buffett and Bill Belichick and reads like a cult document because it is one.",
+    "roast": "☠️ Fell at his post, confidently misnaming the architect of The Process. Sam Hinkie has logged off in disgust.",
+    "difficulty": 2
   },
   {
     "id": "quote-003",
     "category": "quote",
-    "city": "PHI",
-    "prompt": "In Game 1 of the 2001 NBA Finals, Allen Iverson hit a stepback jumper and famously stepped OVER which fallen Lakers guard?",
-    "choices": ["Derek Fisher", "Tyronn Lue", "Brian Shaw", "Ron Harper"],
-    "answer_index": 1,
-    "flavor": "Correct. Tyronn Lue, stepped over for eternity. Iverson dropped 48 and the Sixers stole Game 1 in overtime.",
-    "roast": "☠️ Could not name Tyronn Lue, the most famous man ever stepped over. Iverson is raising his leg over your answer sheet.",
-    "difficulty": 2
+    "city": "NY",
+    "prompt": "Which guard returned to the Knicks in 2017 on a four-year, $71 million offer sheet, four years after they originally drafted him in the 2013 first round?",
+    "choices": [
+      "Iman Shumpert",
+      "Toney Douglas",
+      "Jordan Hill",
+      "Tim Hardaway Jr."
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Tim Hardaway Jr. — drafted 24th by NY in 2013, traded to Atlanta in 2015, brought back when the Hawks declined to match, then flipped to Dallas in the 2019 Porzingis trade.",
+    "roast": "☠️ Couldn't ID the Knick who came home. He left again two years later, so don't feel too bad.",
+    "difficulty": 3
   },
   {
     "id": "quote-004",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"You play to win the game! Hello?! You play to win the game!\" — coach's 2002 sideline-podium rant as head coach of the Jets.",
-    "choices": ["Herm Edwards", "Bill Parcells", "Rex Ryan", "Tom Coughlin"],
-    "answer_index": 0,
-    "flavor": "Correct. Herm Edwards, Jets coach, reminding the press why the games are played.",
+    "prompt": "\"You play to win the game! Hello?! You play to win the game!\" — the October 2002 podium rant from which Jets head coach?",
+    "choices": [
+      "Tom Coughlin",
+      "Bill Parcells",
+      "Rex Ryan",
+      "Herm Edwards"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Herm Edwards, after a Jets loss dropped them to 2-5, reminding the press why the games are played.",
     "roast": "☠️ You don't play to win the game. You play to lose this question. Herm Edwards is disappointed.",
     "difficulty": 1
   },
@@ -47,54 +67,79 @@
     "id": "quote-005",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"We're gonna win the game. I guarantee it.\" — Jets quarterback's famous promise days before Super Bowl III.",
-    "choices": ["Don Maynard", "Weeb Ewbank", "Joe Namath", "Vinny Testaverde"],
+    "prompt": "\"We're gonna win the game. I guarantee it.\" — the promise made at the Miami Touchdown Club days before Super Bowl III in January 1969.",
+    "choices": [
+      "Don Maynard",
+      "Weeb Ewbank",
+      "Joe Namath",
+      "Matt Snell"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. Broadway Joe guaranteed it, then delivered it. The most famous promise in NFL history.",
+    "flavor": "Correct. Broadway Joe guaranteed it, then the Jets beat the 18-point-favorite Colts 16-7. Namath was named MVP.",
     "roast": "☠️ Couldn't name Broadway Joe Namath's guarantee. The only thing guaranteed here is your defeat.",
     "difficulty": 1
   },
   {
     "id": "quote-006",
     "category": "quote",
-    "city": "BOTH",
-    "prompt": "\"The ball don't lie!\" — the famous on-court line, shouted at missed free throws, from which Philadelphia-raised player?",
-    "choices": ["Kobe Bryant", "Rasheed Wallace", "Allen Iverson", "Dikembe Mutombo"],
-    "answer_index": 1,
-    "flavor": "Correct. Rasheed Wallace — Philly born and bred — and the ball, indeed, does not lie.",
-    "roast": "☠️ The ball don't lie, but apparently you do. Rasheed Wallace shouts it from a Philadelphia rooftop.",
-    "difficulty": 2
+    "city": "PHI",
+    "prompt": "\"Win today and we walk together forever.\" — written on the locker-room blackboard before the Flyers clinched the 1974 Stanley Cup. Which coach wrote it?",
+    "choices": [
+      "Fred Shero",
+      "Keith Allen",
+      "Pat Quinn",
+      "Mike Keenan"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Fred Shero — 'The Fog' chalked it before Game 6 of the 1974 Final; the Flyers blanked Boston 1-0 and walked together forever.",
+    "roast": "☠️ Fell at his post unable to name Fred Shero. The Broad Street Bullies do not walk with you.",
+    "difficulty": 3
   },
   {
     "id": "quote-007",
     "category": "quote",
     "city": "PHI",
     "prompt": "\"It's a Philly thing.\" Which Eagles QB said it at a December 2022 press conference, launching the team's playoff rallying cry?",
-    "choices": ["Carson Wentz", "Nick Foles", "Jalen Hurts", "Michael Vick"],
+    "choices": [
+      "Carson Wentz",
+      "Nick Foles",
+      "Jalen Hurts",
+      "Gardner Minshew"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. Jalen Hurts — it's a Philly thing, you wouldn't understand.",
+    "flavor": "Correct. Jalen Hurts — it's a Philly thing, you wouldn't understand. That Eagles team went to Super Bowl LVII.",
     "roast": "☠️ It's a Philly thing. You clearly wouldn't understand. Jalen Hurts shakes his head.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "quote-008",
     "category": "quote",
     "city": "PHI",
     "prompt": "\"I am not a role model... Just because I dunk a basketball doesn't mean I should raise your kids.\" — whose famous 1993 Nike ad line?",
-    "choices": ["Allen Iverson", "Charles Barkley", "Julius Erving", "Moses Malone"],
+    "choices": [
+      "Allen Iverson",
+      "Charles Barkley",
+      "Julius Erving",
+      "Moses Malone"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Charles Barkley — not a role model, by his own admission and Nike's marketing.",
+    "flavor": "Correct. Charles Barkley — the 1993 Nike spot aired during his MVP season in Phoenix, the year after the Sixers traded him. Philly built him; Nike monetized him.",
     "roast": "☠️ Could not identify Sir Charles. Barkley is now calling that 'turrible' on TNT.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "quote-009",
     "category": "quote",
     "city": "PHI",
     "prompt": "\"Fo', fo', fo'.\" — the 1983 playoff prediction of a sweep-sweep-sweep run by which Sixers center?",
-    "choices": ["Darryl Dawkins", "Julius Erving", "Bobby Jones", "Moses Malone"],
+    "choices": [
+      "Darryl Dawkins",
+      "Julius Erving",
+      "Bobby Jones",
+      "Moses Malone"
+    ],
     "answer_index": 3,
-    "flavor": "Correct. Moses Malone predicted 'fo', fo', fo'' — the Sixers nearly delivered, going 12-1.",
+    "flavor": "Correct. Moses Malone. The Sixers went 12-1 in those playoffs (the one loss in the Bucks series) and swept the Lakers in the Finals.",
     "roast": "☠️ Fo', fo', fo' — and you got it fo'-sure wrong. Moses Malone shakes his head from 1983.",
     "difficulty": 3
   },
@@ -102,10 +147,15 @@
     "id": "quote-010",
     "category": "quote",
     "city": "NY",
-    "prompt": "Reggie Miller's infamous trash-talk feud at Madison Square Garden was primarily aimed at which courtside Knicks superfan?",
-    "choices": ["Woody Allen", "Spike Lee", "Chris Rock", "Jerry Seinfeld"],
-    "answer_index": 1,
-    "flavor": "Correct. Reggie Miller vs. Spike Lee — 8 points in 9 seconds and a choke sign for the ages.",
+    "prompt": "Reggie Miller scored 8 points in 8.9 seconds to stun the Knicks in Game 1 of the 1995 semis — one year after aiming the famous choke sign at which courtside superfan?",
+    "choices": [
+      "Woody Allen",
+      "John McEnroe",
+      "Chris Rock",
+      "Spike Lee"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Spike Lee — the choke sign came during Reggie's 25-point fourth quarter at MSG in the 1994 conference finals; the Pacers took the 1995 rematch in seven.",
     "roast": "☠️ Couldn't recall Reggie Miller's nemesis at the Garden. Spike Lee is giving you the choke sign.",
     "difficulty": 2
   },
@@ -113,76 +163,111 @@
     "id": "quote-011",
     "category": "quote",
     "city": "NY",
-    "prompt": "Reggie Miller flashed the choke sign and torched the Knicks for years; he played his entire NBA career for which team?",
-    "choices": ["New York Knicks", "Miami Heat", "Chicago Bulls", "Indiana Pacers"],
+    "prompt": "Which Knicks star spent 2017 in a public cold war with Phil Jackson's front office, then waived his no-trade clause for a September 2017 deal to Oklahoma City?",
+    "choices": [
+      "Amar'e Stoudemire",
+      "Derrick Rose",
+      "Kristaps Porzingis",
+      "Carmelo Anthony"
+    ],
     "answer_index": 3,
-    "flavor": "Correct. Reggie Miller, Indiana Pacer for life, professional Knicks tormentor.",
-    "roast": "☠️ Forgot Reggie Miller was a Pacer. The choke sign was always meant for you.",
-    "difficulty": 2
+    "flavor": "Correct. Carmelo Anthony — the Phil Jackson feud, the no-trade clause standoff, and finally the September 2017 deal to the Thunder for Enes Kanter, Doug McDermott, and a second-rounder.",
+    "roast": "☠️ Missed the Melo-Phil Jackson cold war. It dragged on for months; this took you seconds to get wrong.",
+    "difficulty": 3
   },
   {
     "id": "quote-012",
     "category": "quote",
     "city": "PHI",
-    "prompt": "At a December 1968 Eagles game, the fans famously did WHAT to a man dressed as Santa Claus?",
-    "choices": ["Stole his sleigh", "Threw snowballs at him", "Set his beard on fire", "Carried him off on their shoulders"],
-    "answer_index": 1,
-    "flavor": "Correct. They threw snowballs at Santa, and Philadelphia would do it again.",
-    "roast": "☠️ Didn't know Philly pelted Santa with snowballs in 1968. It's the city's whole personality.",
-    "difficulty": 1
+    "prompt": "Which reigning Rookie of the Year did Sam Hinkie trade to Milwaukee at the 2015 deadline for a future Lakers first-round pick — peak Process?",
+    "choices": [
+      "Michael Carter-Williams",
+      "Nerlens Noel",
+      "Tony Wroten",
+      "Robert Covington"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Michael Carter-Williams — the 2014 Rookie of the Year, dealt at the 2015 deadline in a three-team trade for a future Lakers first-round pick.",
+    "roast": "☠️ Missed the Rookie of the Year Philly traded away. Trusting the Process meant trading the trophy winner.",
+    "difficulty": 3
   },
   {
     "id": "quote-013",
     "category": "quote",
-    "city": "PHI",
-    "prompt": "\"They booed Santa Claus.\" This single sentence is shorthand for the merciless fanbase of which city?",
-    "choices": ["Boston", "New York", "Philadelphia", "Pittsburgh"],
+    "city": "NY",
+    "prompt": "\"The Knicks are back!\" Which big man declared it at his MSG introduction after leaving Phoenix on a five-year, $100M deal in July 2010?",
+    "choices": [
+      "David Lee",
+      "Tyson Chandler",
+      "Amar'e Stoudemire",
+      "Eddy Curry"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. Philadelphia. Booing Santa is not a low point — it's a founding myth.",
-    "roast": "☠️ Misidentified the Santa-booing city. Only Philadelphia would, and only Philadelphia did.",
-    "difficulty": 1
+    "flavor": "Correct. Amar'e Stoudemire — the 2010 declaration preceded the Carmelo trade and a brief, glorious return to relevance before his knees gave out.",
+    "roast": "☠️ Couldn't name the man who said the Knicks were back. (They were, briefly, kind of.)",
+    "difficulty": 2
   },
   {
     "id": "quote-014",
     "category": "quote",
-    "city": "NY",
-    "prompt": "\"The world's most famous arena\" and self-styled Mecca of basketball — which building?",
-    "choices": ["Madison Square Garden", "Barclays Center", "The Palestra", "The Spectrum"],
-    "answer_index": 0,
-    "flavor": "Correct. Madison Square Garden, the self-declared Mecca — record sellouts, championship droughts.",
-    "roast": "☠️ Couldn't find the Mecca of basketball. MSG's marketing department weeps into its luxury-box receipts.",
+    "city": "PHI",
+    "prompt": "\"I'm The Process.\" Which Sixer embraced the tank-era nickname as his own, eventually winning the 2022-23 MVP?",
+    "choices": [
+      "Ben Simmons",
+      "Joel Embiid",
+      "Markelle Fultz",
+      "Jahlil Okafor"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Joel Embiid — drafted third in 2014, missed his first two seasons to foot injuries, then became The Process incarnate.",
+    "roast": "☠️ Didn't know Embiid calls himself The Process. He trusted it; you should have too.",
     "difficulty": 1
   },
   {
     "id": "quote-015",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"It ain't over till it's over.\" — the most quoted bit of accidental philosophy from which Yankees legend?",
-    "choices": ["Joe DiMaggio", "Yogi Berra", "Mickey Mantle", "Babe Ruth"],
+    "prompt": "\"It ain't over till it's over.\" — the most-quoted bit of accidental philosophy from which Yankees Hall of Famer?",
+    "choices": [
+      "Joe DiMaggio",
+      "Yogi Berra",
+      "Mickey Mantle",
+      "Whitey Ford"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Yogi Berra — it ain't over till it's over, and you saw this one through.",
+    "flavor": "Correct. Yogi Berra — said while managing the 1973 Mets, who indeed rallied to win the NL pennant.",
     "roast": "☠️ It ain't over till it's over, and for you it's over. Yogi Berra would have a saying for this.",
     "difficulty": 1
   },
   {
     "id": "quote-016",
     "category": "quote",
-    "city": "NY",
-    "prompt": "\"When you come to a fork in the road, take it.\" — another Yogi-ism from which Yankees catcher?",
-    "choices": ["Thurman Munson", "Bill Dickey", "Jorge Posada", "Yogi Berra"],
-    "answer_index": 3,
-    "flavor": "Correct. Yogi Berra. He reportedly gave directions to his house this exact way.",
-    "roast": "☠️ Took the wrong fork in the road. Yogi Berra told you to take it; you took neither.",
+    "city": "PHI",
+    "prompt": "\"Dream Team.\" Which newly signed backup QB hung that label on the Eagles' 2011 free-agency haul at his first Philadelphia press conference?",
+    "choices": [
+      "Michael Vick",
+      "Vince Young",
+      "Nnamdi Asomugha",
+      "Jason Babin"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Vince Young — 'From Nnamdi to Cromartie, to Jason, to myself.' The Dream Team went 8-8, and Andy Reid was fired a year later.",
+    "roast": "☠️ The Dream Team went 8-8; you went 0-1. Vince Young regrets the quote, and you should regret this answer.",
     "difficulty": 2
   },
   {
     "id": "quote-017",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"Today I consider myself the luckiest man on the face of the earth.\" — the 1939 Yankee Stadium farewell speech. Who?",
-    "choices": ["Babe Ruth", "Lou Gehrig", "Joe DiMaggio", "Bill Dickey"],
+    "prompt": "\"Today I consider myself the luckiest man on the face of the earth.\" — the July 4, 1939 farewell speech at Yankee Stadium. Who?",
+    "choices": [
+      "Babe Ruth",
+      "Lou Gehrig",
+      "Joe DiMaggio",
+      "Bill Dickey"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Lou Gehrig, the luckiest man on the face of the earth. The most moving speech in sports.",
+    "flavor": "Correct. Lou Gehrig, after ALS ended his 2,130-consecutive-game streak. The most moving speech in sports.",
     "roast": "☠️ Missed Lou Gehrig's farewell. Some things you don't get wrong; this was one of them.",
     "difficulty": 2
   },
@@ -191,75 +276,110 @@
     "category": "quote",
     "city": "NY",
     "prompt": "\"Ya gotta believe!\" — the rallying cry of the 1973 NL-pennant Mets, popularized by which relief pitcher?",
-    "choices": ["Tom Seaver", "Jerry Koosman", "Tug McGraw", "Nolan Ryan"],
+    "choices": [
+      "Tom Seaver",
+      "Jerry Koosman",
+      "Tug McGraw",
+      "Nolan Ryan"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. Tug McGraw — 'Ya gotta believe!' — and the '73 Mets nearly believed their way to a title.",
+    "flavor": "Correct. Tug McGraw — the '73 Mets won the pennant from last place in August, then pushed Oakland to seven in the World Series.",
     "roast": "☠️ Ya gotta believe. You didn't. Tug McGraw shakes his head from the Shea Stadium bullpen.",
     "difficulty": 3
   },
   {
     "id": "quote-019",
     "category": "quote",
-    "city": "PHI",
-    "prompt": "\"Yo, Adrian!\" — the immortal cry of which fictional Philadelphia boxer?",
-    "choices": ["Apollo Creed", "Clubber Lang", "Rocky Balboa", "Tommy Gunn"],
-    "answer_index": 2,
-    "flavor": "Correct. Rocky Balboa. The steps. The statue. The cheesesteak afterward.",
-    "roast": "☠️ Yo — you don't know Rocky? In Philadelphia that's grounds for exile across the river.",
-    "difficulty": 1
+    "city": "NY",
+    "prompt": "\"Same old Jets.\" Which Jets coach arrived in 2009 promising Super Bowls, talked endless trash, and took the team to back-to-back AFC title games?",
+    "choices": [
+      "Herm Edwards",
+      "Eric Mangini",
+      "Todd Bowles",
+      "Rex Ryan"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Rex Ryan — the brash 2009-10 Jets reached two straight AFC Championship Games behind Mark Sanchez before it all unraveled.",
+    "roast": "☠️ Couldn't name the loudest coach the Jets ever had. Rex Ryan guaranteed it; you guaranteed nothing.",
+    "difficulty": 2
   },
   {
     "id": "quote-020",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"I want to thank the Good Lord for making me a Yankee.\" — humble line attributed to which Yankee Clipper?",
-    "choices": ["Joe DiMaggio", "Lou Gehrig", "Mickey Mantle", "Whitey Ford"],
+    "prompt": "Which catcher — the first Yankees captain since Lou Gehrig — led the Bronx Zoo Yankees to the 1977 and 1978 titles before dying in a 1979 plane crash?",
+    "choices": [
+      "Thurman Munson",
+      "Bill Dickey",
+      "Jorge Posada",
+      "Elston Howard"
+    ],
     "answer_index": 0,
-    "flavor": "Correct. Joe DiMaggio, thanking the Good Lord for the pinstripes.",
-    "roast": "☠️ Missed the Joltin' Joe line. The Yankee Clipper sails past your defeated battalion.",
+    "flavor": "Correct. Thurman Munson — the 1976 AL MVP and captain of the 1977 and 1978 champs, killed flying his own plane in August 1979.",
+    "roast": "☠️ Missed the Bronx Zoo's captain. Thurman Munson's locker still sits untouched in the Yankees clubhouse.",
     "difficulty": 3
   },
   {
     "id": "quote-021",
     "category": "quote",
     "city": "PHI",
-    "prompt": "Doug Pederson's gutsy 4th-down trick play that scored a Nick Foles touchdown in Super Bowl LII is known as the WHAT?",
-    "choices": ["Music City Miracle", "Philly Special", "Brotherly Shove", "Minneapolis Miracle"],
+    "prompt": "\"You want Philly Philly?\" — the mic'd-up sideline question to Doug Pederson that triggered the Philly Special TD in Super Bowl LII came from which Eagle?",
+    "choices": [
+      "Carson Wentz",
+      "Nick Foles",
+      "Zach Ertz",
+      "Corey Clement"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. The Philly Special — Nick Foles caught a touchdown in the Super Bowl. Underdogs, baby.",
-    "roast": "☠️ Fumbled the Philly Special. Nick Foles caught a Super Bowl touchdown and you dropped this.",
-    "difficulty": 2
+    "flavor": "Correct. Nick Foles asked, Pederson said 'Yeah, let's do it,' and Foles caught a TD from Trey Burton on 4th-and-goal.",
+    "roast": "☠️ 'You want Philly Philly?' Nick Foles asked it; you fumbled it. Pederson wouldn't trust you with the call sheet.",
+    "difficulty": 3
   },
   {
     "id": "quote-022",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"The Butt Fumble.\" Mark Sanchez ran into his own lineman's backside on Thanksgiving 2012 for which team?",
-    "choices": ["New York Giants", "Buffalo Bills", "New York Jets", "New England Patriots"],
-    "answer_index": 2,
-    "flavor": "Correct. The Jets. The Butt Fumble. Mark Sanchez's most enduring contribution to football.",
-    "roast": "☠️ Couldn't place the Butt Fumble with the Jets. Mark Sanchez has run face-first into your answer.",
-    "difficulty": 1
+    "prompt": "On Thanksgiving night 2012, Mark Sanchez ran into the backside of which teammate, fumbling on what became 'The Butt Fumble'?",
+    "choices": [
+      "Nick Mangold",
+      "Brandon Moore",
+      "D'Brickashaw Ferguson",
+      "Matt Slauson"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Guard Brandon Moore — Sanchez ran into his rear, fumbled, and the Patriots returned it for a TD in a 49-19 blowout.",
+    "roast": "☠️ Couldn't name the backside that made history. Brandon Moore's rear end is more famous than your answer.",
+    "difficulty": 3
   },
   {
     "id": "quote-023",
     "category": "quote",
     "city": "PHI",
-    "prompt": "\"No one likes us, no one likes us, we don't care!\" — the Super Bowl LII parade speech, in full Mummers costume, was led by which Eagles lineman?",
-    "choices": ["Lane Johnson", "Jason Kelce", "Brandon Graham", "Fletcher Cox"],
+    "prompt": "\"No one likes us, no one likes us, we don't care!\" — the Super Bowl LII parade speech, in full Mummers costume, was led by which Eagle?",
+    "choices": [
+      "Lane Johnson",
+      "Jason Kelce",
+      "Brandon Graham",
+      "Fletcher Cox"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Jason Kelce, in full Mummers regalia, no one likes us, we don't care.",
+    "flavor": "Correct. Jason Kelce, in green Mummers regalia, delivering the speech of his life on the Art Museum steps in February 2018.",
     "roast": "☠️ No one likes us, we don't care — and you didn't know it was Jason Kelce. The Mummers are booing.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "quote-024",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"SELL THE TEAM!\" The MSG chant is perennially aimed at which Knicks owner (also an occasional blues guitarist)?",
-    "choices": ["Charles Dolan", "Leon Rose", "James Dolan", "Phil Jackson"],
+    "prompt": "\"SELL THE TEAM!\" The recurring MSG chant is aimed at which Knicks owner (also a blues guitarist who fronts a band)?",
+    "choices": [
+      "Charles Dolan",
+      "Leon Rose",
+      "James Dolan",
+      "Steve Mills"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. James Dolan, owner and occasional blues guitarist, eternal subject of 'SELL THE TEAM.'",
+    "flavor": "Correct. James Dolan — owner via the Madison Square Garden Company, and frontman of the band JD & The Straight Shot.",
     "roast": "☠️ Couldn't name James Dolan. The Garden chants 'SELL THE TEAM' on your behalf.",
     "difficulty": 2
   },
@@ -267,44 +387,64 @@
     "id": "quote-025",
     "category": "quote",
     "city": "PHI",
-    "prompt": "Allen Iverson's signature nickname, branded into Philadelphia sports lore, was:",
-    "choices": ["The Truth", "Iceman", "The Glove", "The Answer"],
-    "answer_index": 3,
-    "flavor": "Correct. The Answer. Allen Iverson, all six feet of him, crossing over the entire NBA.",
-    "roast": "☠️ Forgot Allen Iverson was The Answer. The question of who's losing this war has its answer too.",
-    "difficulty": 1
+    "prompt": "Which 6-foot Sixers guard won his fourth scoring title in 2004-05 at 30.7 a game, then was traded to Denver in December 2006?",
+    "choices": [
+      "Allen Iverson",
+      "Andre Iguodala",
+      "Aaron McKie",
+      "Eric Snow"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Allen Iverson — beat out Kobe and LeBron for that 2004-05 scoring crown, then was dealt to the Nuggets for Andre Miller, Joe Smith, and two firsts.",
+    "roast": "☠️ Forgot The Answer's last great Sixers run. Iverson is crossing over your answer sheet.",
+    "difficulty": 2
   },
   {
     "id": "quote-026",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"Linsanity!\" In 2012, which undrafted Harvard grad set the Knicks and the world on fire for a few magical weeks?",
-    "choices": ["Iman Shumpert", "Jeremy Lin", "Landry Fields", "Toney Douglas"],
-    "answer_index": 1,
-    "flavor": "Correct. Jeremy Lin. Linsanity. For three weeks, the Garden believed again.",
+    "prompt": "During Linsanity in February 2012, which undrafted Harvard grad dropped 38 on Kobe and the Lakers and hit a game-winner over Toronto?",
+    "choices": [
+      "Iman Shumpert",
+      "Toney Douglas",
+      "Landry Fields",
+      "Jeremy Lin"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Jeremy Lin — a waiver-wire pickup who started a seven-game win streak and the 38-point Kobe game at MSG.",
     "roast": "☠️ Missed Linsanity. Jeremy Lin dropped 38 on the Lakers and you dropped this question.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "id": "quote-027",
     "category": "quote",
     "city": "NY",
-    "prompt": "The drawn-out 2011 trade saga finally brought which star to Madison Square Garden?",
-    "choices": ["Amar'e Stoudemire", "Tracy McGrady", "Carmelo Anthony", "Baron Davis"],
-    "answer_index": 2,
-    "flavor": "Correct. Carmelo Anthony, after the longest trade soap opera the league had seen.",
-    "roast": "☠️ Couldn't recall the Melo-to-the-Knicks saga. It took months; this took you seconds to get wrong.",
+    "prompt": "Which superstar signed with Brooklyn in 2019, requested a trade in summer 2022, and was finally dealt to Phoenix at the 2023 deadline as the experiment imploded?",
+    "choices": [
+      "Kyrie Irving",
+      "Kevin Durant",
+      "James Harden",
+      "DeAndre Jordan"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Kevin Durant — signed with Brooklyn in 2019, requested a trade in 2022, and was finally dealt to the Suns at the 2023 deadline.",
+    "roast": "☠️ Missed the Net who never quite was. KD's Brooklyn era: lots of talent, zero conference finals.",
     "difficulty": 2
   },
   {
     "id": "quote-028",
     "category": "quote",
     "city": "PHI",
-    "prompt": "\"You want Philly Philly?\" — the mic'd-up sideline question to Doug Pederson that triggered the Philly Special in Super Bowl LII came from which Eagle?",
-    "choices": ["Carson Wentz", "Nick Foles", "Zach Ertz", "Corey Clement"],
+    "prompt": "Which player did the Sixers trade up with Boston to take No.1 overall in 2017, only to watch his jump shot mysteriously vanish?",
+    "choices": [
+      "Ben Simmons",
+      "Markelle Fultz",
+      "Jahlil Okafor",
+      "Dario Saric"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Nick Foles asked, Pederson said 'Yeah, let's do it,' and a backup QB caught a Super Bowl touchdown.",
-    "roast": "☠️ 'You want Philly Philly?' Nick Foles asked it; you fumbled it. Pederson would not have trusted you with the call sheet.",
+    "flavor": "Correct. Markelle Fultz — Philly traded up with Boston for the 2017 No.1 pick, then his shot mysteriously vanished (the yips/thoracic outlet saga).",
+    "roast": "☠️ Missed the No.1 pick whose jumper disappeared. The Fultz trade haunts the Process to this day.",
     "difficulty": 3
   },
   {
@@ -312,21 +452,31 @@
     "category": "quote",
     "city": "NY",
     "prompt": "\"The Giants win the pennant! The Giants win the pennant!\" — Russ Hodges' delirious 1951 call followed whose 'Shot Heard 'Round the World'?",
-    "choices": ["Willie Mays", "Bobby Thomson", "Monte Irvin", "Sal Maglie"],
+    "choices": [
+      "Willie Mays",
+      "Bobby Thomson",
+      "Monte Irvin",
+      "Sal Maglie"
+    ],
     "answer_index": 1,
-    "flavor": "Correct. Bobby Thomson's Shot Heard 'Round the World — back when the Giants played in New York.",
+    "flavor": "Correct. Bobby Thomson's pennant-winning homer off Ralph Branca — back when the Giants played at the Polo Grounds in Manhattan.",
     "roast": "☠️ Missed Bobby Thomson's pennant shot. The Giants won it — then moved to San Francisco, which is its own betrayal.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "quote-030",
     "category": "quote",
     "city": "PHI",
-    "prompt": "\"The Broad Street Bullies\" — that bruising 1970s nickname belonged to which Philadelphia championship team?",
-    "choices": ["Philadelphia 76ers", "Philadelphia Flyers", "Philadelphia Phillies", "Philadelphia Eagles"],
-    "answer_index": 1,
-    "flavor": "Correct. The Broad Street Bullies — the Flyers punched their way to back-to-back Cups.",
-    "roast": "☠️ Didn't know the Broad Street Bullies were the Flyers. They'd like a word, and probably a fistfight.",
+    "prompt": "Which shortstop, the 2007 NL MVP, anchored the infield alongside Chase Utley on the 2008 World Series champion Phillies?",
+    "choices": [
+      "Jimmy Rollins",
+      "Pedro Feliz",
+      "Chase Utley",
+      "Shane Victorino"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Jimmy Rollins — the 2007 NL MVP and shortstop of the 2008 World Series champions, the franchise's only title since 1980.",
+    "roast": "☠️ Forgot J-Roll anchored the 2008 champs. The only Phillies ring this century and you whiffed.",
     "difficulty": 2
   },
   {
@@ -334,54 +484,79 @@
     "category": "quote",
     "city": "NY",
     "prompt": "\"1940!\" Rangers fans were taunted for decades over their Stanley Cup drought — finally broken in which year?",
-    "choices": ["1980", "1999", "1994", "2004"],
+    "choices": [
+      "1980",
+      "1999",
+      "1994",
+      "2004"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. 1994 — Mark Messier guaranteed it and the Rangers finally silenced the '1940!' chant.",
+    "flavor": "Correct. 1994 — the Rangers beat the Canucks in seven, with Messier and Brian Leetch (Conn Smythe) ending the 54-year wait.",
     "roast": "☠️ Missed the 1994 Rangers Cup. '1940!' echoes back at you from every rival fan in earshot.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "quote-032",
     "category": "quote",
     "city": "NY",
-    "prompt": "Mark Messier's bold \"We're gonna win Game 6\" guarantee in the 1994 Eastern Final was for which team?",
-    "choices": ["New York Islanders", "New York Rangers", "New Jersey Devils", "New York Knicks"],
-    "answer_index": 1,
-    "flavor": "Correct. Mark Messier, Rangers captain, guaranteed Game 6 — then scored a hat trick to back it up.",
-    "roast": "☠️ Couldn't place Messier's guarantee with the Rangers. The Captain delivered; you did not.",
+    "prompt": "\"We're gonna go in and win Game 6.\" Which Rangers captain made that 1994 conference-final guarantee against New Jersey, then scored a hat trick to back it?",
+    "choices": [
+      "Brian Leetch",
+      "Mike Richter",
+      "Adam Graves",
+      "Mark Messier"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Mark Messier — the guarantee, then the natural hat trick in Game 6 against the Devils, then the Cup.",
+    "roast": "☠️ Couldn't place Messier's guarantee. The Captain delivered; you did not.",
     "difficulty": 2
   },
   {
     "id": "quote-033",
     "category": "quote",
     "city": "PHI",
-    "prompt": "Which ace did the Phillies infamously trade away after the 2009 season — \"the one that got away\" Philadelphia never forgave?",
-    "choices": ["Cliff Lee", "Ryan Howard", "Chase Utley", "Jayson Werth"],
+    "prompt": "Which ace did the Phillies trade to Seattle in December 2009 (the same week they acquired Roy Halladay) — a move Philly never forgave?",
+    "choices": [
+      "Cliff Lee",
+      "Cole Hamels",
+      "Roy Oswalt",
+      "Brett Myers"
+    ],
     "answer_index": 0,
-    "flavor": "Correct. Cliff Lee — traded away mid-dominance, a move Philly never fully forgave.",
+    "flavor": "Correct. Cliff Lee — dealt to Seattle for prospects the same offseason they got Halladay. He returned via free agency in 2011, but the original trade still stings.",
     "roast": "☠️ Couldn't recall the Cliff Lee trade. Phillies fans still wake up in cold sweats over it.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "quote-034",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"The Bronx is burning.\" The phrase, tied to a 1977 World Series broadcast, referenced fires seen near which ballpark?",
-    "choices": ["Shea Stadium", "Ebbets Field", "Yankee Stadium", "the Polo Grounds"],
-    "answer_index": 2,
-    "flavor": "Correct. Yankee Stadium — 'the Bronx is burning,' a phrase that outlived the 1977 season itself.",
-    "roast": "☠️ Misplaced 'the Bronx is burning.' It was Yankee Stadium, in the borough that's literally in the name.",
-    "difficulty": 3
+    "prompt": "\"Winning is the most important thing in my life, after breathing. Breathing first, winning next.\" — which Yankees owner, famous for hiring and firing Billy Martin five times?",
+    "choices": [
+      "Gene Michael",
+      "George Steinbrenner",
+      "Gabe Paul",
+      "Lee MacPhail"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. George Steinbrenner — The Boss, who hired and fired Billy Martin five separate times.",
+    "roast": "☠️ Missed The Boss. George Steinbrenner would have fired you, then re-hired you, then fired you again.",
+    "difficulty": 2
   },
   {
     "id": "quote-035",
     "category": "quote",
     "city": "PHI",
-    "prompt": "Charles Barkley — fresh off eight seasons as a Sixer — elbowed an Angolan opponent and grinned about it as a member of the U.S. Dream Team at which event?",
-    "choices": ["1992 Olympics", "1996 Olympics", "the 1993 NBA Finals", "the 1991 All-Star Game"],
-    "answer_index": 0,
-    "flavor": "Correct. Charles Barkley, 1992 Dream Team, elbowing Angola and apologizing to no one.",
-    "roast": "☠️ Couldn't pin Barkley's Dream Team elbow to 1992. Sir Charles regrets nothing, including roasting you.",
+    "prompt": "Which Sixers point guard's refusal to shoot — most infamously a passed-up open dunk in the 2021 playoffs vs Atlanta — got him run out of Philadelphia?",
+    "choices": [
+      "Shake Milton",
+      "T.J. McConnell",
+      "Ben Simmons",
+      "Tyrese Maxey"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Ben Simmons — the passed dunk in Game 7 against the Hawks, then the holdout, then the 2022 trade to Brooklyn for James Harden.",
+    "roast": "☠️ Forgot the passed dunk that broke Philadelphia's heart. Ben Simmons kicked it out to a covered shooter and you kicked out this answer.",
     "difficulty": 2
   },
   {
@@ -389,9 +564,14 @@
     "category": "quote",
     "city": "PHI",
     "prompt": "Who delivered the Super Bowl LII-clinching strip-sack of Tom Brady to win the Eagles their first Lombardi?",
-    "choices": ["Fletcher Cox", "Chris Long", "Brandon Graham", "Derek Barnett"],
+    "choices": [
+      "Fletcher Cox",
+      "Chris Long",
+      "Brandon Graham",
+      "Derek Barnett"
+    ],
     "answer_index": 2,
-    "flavor": "Correct. Brandon Graham's strip-sack of Brady sealed Philadelphia's first Lombardi.",
+    "flavor": "Correct. Brandon Graham — his fourth-quarter strip-sack (recovered by Derek Barnett) set up the field goal that won it.",
     "roast": "☠️ Forgot Brandon Graham strip-sacked Brady to win it all. Philadelphia will never forget; you already did.",
     "difficulty": 3
   },
@@ -399,44 +579,64 @@
     "id": "quote-037",
     "category": "quote",
     "city": "NY",
-    "prompt": "\"The Helmet Catch.\" David Tyree pinned the ball to his helmet to upset the undefeated Patriots in Super Bowl XLII for which team?",
-    "choices": ["New York Jets", "New York Giants", "New England Patriots", "Dallas Cowboys"],
-    "answer_index": 1,
-    "flavor": "Correct. The Giants — David Tyree's helmet catch ended the Patriots' perfect season.",
-    "roast": "☠️ Missed the Helmet Catch with the Giants. (Who, note, play in New Jersey — which is what this war is about.)",
+    "prompt": "\"The Helmet Catch.\" David Tyree pinned the ball to his helmet on a Giants Super Bowl XLII drive — but who threw that 32-yard escape-act pass?",
+    "choices": [
+      "Kerry Collins",
+      "Jeff Hostetler",
+      "Phil Simms",
+      "Eli Manning"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Eli Manning — escaping the rush before the helmet catch, then hitting Plaxico Burress for the game-winner over the 18-0 Patriots.",
+    "roast": "☠️ Missed who threw the Helmet Catch ball. Eli Manning escaped three Patriots; you couldn't escape this.",
     "difficulty": 2
   },
   {
     "id": "quote-038",
     "category": "quote",
-    "city": "PHI",
-    "prompt": "Joel Embiid crowned himself with which self-styled nickname, born from the Sixers' tanking era?",
-    "choices": ["The Truth", "The Process", "The Answer", "The Beard"],
-    "answer_index": 1,
-    "flavor": "Correct. Joel Embiid IS The Process, by his own self-appointment.",
-    "roast": "☠️ Didn't know Embiid calls himself The Process. He trusted it; you should have too.",
-    "difficulty": 1
+    "city": "NY",
+    "prompt": "\"I would just say what's up to my big fella, K.G.\" Which Net headlined the 2013 blockbuster that sent Brooklyn's future first-rounders to Boston for an aging core?",
+    "choices": [
+      "Paul Pierce",
+      "Joe Johnson",
+      "Deron Williams",
+      "Brook Lopez"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Paul Pierce — he and Kevin Garnett came to Brooklyn in the 2013 trade that gutted the Nets' draft capital and built the Celtics' Tatum-Brown future.",
+    "roast": "☠️ Missed the Pierce-and-KG Nets gamble. Brooklyn mortgaged a decade of picks and got one second round.",
+    "difficulty": 3
   },
   {
     "id": "quote-039",
     "category": "quote",
-    "city": "NY",
-    "prompt": "The legendary Reggie Miller vs. Spike Lee courtside trash-talk wars at Madison Square Garden defined which decade of Knicks-Pacers playoff battles?",
-    "choices": ["The 1990s", "The 1970s", "The 2010s", "The 1980s"],
-    "answer_index": 0,
-    "flavor": "Correct. The 1990s — Pacers, Knicks, Spike Lee courtside, and trash talk as an art form.",
-    "roast": "☠️ Missed the 1990s Garden trash-talk era. Spike Lee is heckling you from the front row.",
-    "difficulty": 3
+    "city": "PHI",
+    "prompt": "\"That's a clown question, bro.\" Which then-Nationals star and future Phillies villain coined this 2012 retort to a reporter, later a Phillie himself?",
+    "choices": [
+      "Aaron Nola",
+      "Jayson Werth",
+      "Ryan Howard",
+      "Bryce Harper"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Bryce Harper — said it as a 19-year-old Nationals rookie in 2012, then signed his 13-year Phillies deal in 2019.",
+    "roast": "☠️ That's a clown answer, bro. Bryce Harper said the line as a teenager; you couldn't place it.",
+    "difficulty": 2
   },
   {
     "id": "quote-040",
     "category": "quote",
-    "city": "BOTH",
-    "prompt": "Rasheed Wallace coined \"The ball don't lie\" — but in which city was he born and raised, making it fair game for both armies?",
-    "choices": ["Detroit", "Portland", "Philadelphia", "New York"],
-    "answer_index": 2,
-    "flavor": "Correct. Philadelphia raised Rasheed Wallace — the ball don't lie, and neither does his birth certificate.",
-    "roast": "☠️ Got Rasheed Wallace's hometown wrong. The ball don't lie; Philadelphia raised him.",
-    "difficulty": 2
+    "city": "PHI",
+    "prompt": "\"The ball don't lie!\" — the line shouted at missed free throws by which Philadelphia-raised forward who won a title in Detroit?",
+    "choices": [
+      "Kobe Bryant",
+      "Kyle Lowry",
+      "Dawn Staley",
+      "Rasheed Wallace"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Rasheed Wallace — Philly-bred, won the 2004 title with the Pistons, and 'the ball don't lie' is his enduring contribution to basketball.",
+    "roast": "☠️ The ball don't lie, but apparently you do. Rasheed Wallace shouts it from a Philadelphia rooftop.",
+    "difficulty": 1
   }
 ]

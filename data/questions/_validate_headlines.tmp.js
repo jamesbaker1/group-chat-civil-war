@@ -1,0 +1,24 @@
+import fs from "fs";
+const qs = JSON.parse(fs.readFileSync("C:/Users/jimmy/group-chat-civil-war/data/questions/headlines.json", "utf8"));
+const errs = [];
+if (!Array.isArray(qs)) errs.push("not an array");
+if (qs.length !== 30) errs.push("count=" + qs.length);
+const ids = new Set();
+qs.forEach((q, i) => {
+  const tag = q.id || ("idx" + i);
+  if (ids.has(q.id)) errs.push("dup id " + q.id);
+  ids.add(q.id);
+  if (!/^headline-\d{3}$/.test(q.id)) errs.push("bad id " + tag);
+  if (q.category !== "headline") errs.push("bad category " + tag);
+  if (!["PHI", "NY", "BOTH"].includes(q.city)) errs.push("bad city " + tag);
+  if (!q.prompt || !q.prompt.trim()) errs.push("empty prompt " + tag);
+  if (JSON.stringify(q.choices) !== JSON.stringify(["Real", "Fake"])) errs.push("bad choices " + tag);
+  if (![0, 1].includes(q.answer_index)) errs.push("bad answer_index " + tag);
+  if (!q.flavor || !q.flavor.trim()) errs.push("empty flavor " + tag);
+  if (!q.roast || !q.roast.trim()) errs.push("empty roast " + tag);
+  if (![1, 2, 3].includes(q.difficulty)) errs.push("bad difficulty " + tag);
+});
+const real = qs.filter(q => q.answer_index === 0).length;
+console.log("count:", qs.length, "| real:", real, "| fake:", qs.length - real);
+console.log("PHI:", qs.filter(q => q.city === "PHI").length, "NY:", qs.filter(q => q.city === "NY").length, "BOTH:", qs.filter(q => q.city === "BOTH").length);
+console.log(errs.length ? "ERRORS:\n" + errs.join("\n") : "STRUCTURE OK");
