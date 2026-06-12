@@ -1,0 +1,485 @@
+/* GROUP CHAT CIVIL WAR — parchment war-dispatch aesthetic. No image files. */
+
+:root {
+  --paper: #e9dcc0;
+  --paper-2: #ded0ad;
+  --paper-edge: #c9b78b;
+  --ink: #3a2a16;
+  --ink-soft: #5a4527;
+  --ink-faint: #806a48;
+  --wax: #8c2e22;
+  --wax-dark: #6d2018;
+  --phi: #14463b;        /* midnight green */
+  --phi-accent: #9fb6ac; /* silver-ish */
+  --ny: #1a2b4a;         /* navy */
+  --ny-accent: #e08a2c;  /* orange */
+  --gold: #9a7b2e;
+  --rule: rgba(58, 42, 22, 0.35);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Crimson Text", Georgia, serif;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.45;
+  background-color: #c8b48a;
+  /* Aged paper: layered radial + linear gradients = warm, blotchy parchment. */
+  background-image:
+    radial-gradient(ellipse at 18% 12%, rgba(255, 248, 220, 0.55), transparent 45%),
+    radial-gradient(ellipse at 82% 78%, rgba(120, 92, 50, 0.30), transparent 55%),
+    radial-gradient(circle at 60% 30%, rgba(140, 46, 34, 0.06), transparent 40%),
+    repeating-linear-gradient(90deg, rgba(120, 92, 50, 0.04) 0px, rgba(120, 92, 50, 0.04) 2px, transparent 2px, transparent 5px),
+    linear-gradient(135deg, var(--paper) 0%, var(--paper-2) 100%);
+  background-attachment: fixed;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px 14px 40px;
+}
+
+.screen { animation: fade 0.35s ease; }
+.hidden { display: none !important; }
+
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ---------------- Headers / masthead ---------------- */
+.masthead { text-align: center; margin: 10px 0 18px; }
+.masthead-rule {
+  font-family: "IM Fell English", serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: var(--ink-faint);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 5px 0;
+  margin: 8px 0;
+}
+.title {
+  font-family: "Rye", "IM Fell English", serif;
+  font-size: 44px;
+  line-height: 0.95;
+  margin: 6px 0;
+  color: var(--ink);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.25), 2px 2px 0 rgba(58,42,22,0.12);
+}
+.subtitle {
+  font-family: "IM Fell English", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+  margin: 8px 0;
+}
+
+.section-title {
+  font-family: "Rye", serif;
+  text-align: center;
+  font-size: 22px;
+  color: var(--ink);
+  margin: 22px 0 10px;
+  letter-spacing: 1px;
+}
+
+/* ---------------- Parchment cards ---------------- */
+.parchment-card {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255,250,235,0.4), transparent 30%),
+    linear-gradient(135deg, #efe3c8, #e2d3ad);
+  border: 1px solid var(--paper-edge);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 28px rgba(120, 92, 50, 0.18),
+    0 3px 10px rgba(58, 42, 22, 0.25);
+  padding: 16px 16px 18px;
+  margin: 14px 0;
+}
+.parchment-card::before {
+  /* torn/aged inner edge */
+  content: "";
+  position: absolute; inset: 4px;
+  border: 1px dashed rgba(58, 42, 22, 0.18);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+/* ---------------- Inputs / fields ---------------- */
+.field-label {
+  display: block;
+  font-family: "IM Fell English", serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+}
+.ink-input {
+  width: 100%;
+  font-family: "IM Fell English", serif;
+  font-size: 22px;
+  color: var(--ink);
+  background: rgba(255, 252, 240, 0.55);
+  border: none;
+  border-bottom: 2px solid var(--ink-soft);
+  padding: 8px 4px;
+  outline: none;
+}
+.ink-input::placeholder { color: var(--ink-faint); opacity: 0.7; font-style: italic; }
+.hint { font-size: 13px; color: var(--ink-faint); font-style: italic; margin: 6px 2px 14px; }
+
+/* ---------------- Army choice ---------------- */
+.army-choice { display: grid; gap: 12px; margin-bottom: 16px; }
+.army-btn {
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid var(--paper-edge);
+  padding: 12px 14px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  align-items: center;
+  color: #f3ead4;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, outline 0.1s;
+  font-family: "Crimson Text", serif;
+}
+.army-btn:active { transform: scale(0.98); }
+.army-phi { background: linear-gradient(135deg, var(--phi), #0d2f28); border-color: var(--phi-accent); }
+.army-ny { background: linear-gradient(135deg, var(--ny), #0f1c33); border-color: var(--ny-accent); }
+.army-emoji { grid-row: 1 / 3; font-size: 38px; }
+.army-name { font-family: "Rye", serif; font-size: 18px; line-height: 1.1; }
+.army-flavor { font-style: italic; font-size: 14px; opacity: 0.92; grid-column: 2; }
+.army-btn.selected { outline: 3px solid var(--wax); box-shadow: 0 0 0 3px rgba(140,46,34,0.3), 0 4px 14px rgba(0,0,0,0.35); }
+
+/* ---------------- Buttons (wax seals / dispatch stamps) ---------------- */
+.seal-btn {
+  display: block;
+  width: 100%;
+  font-family: "Rye", serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #f6ecd2;
+  background: radial-gradient(circle at 30% 25%, #a8453a, var(--wax) 55%, var(--wax-dark));
+  border: 2px solid #5a1c14;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin: 12px 0;
+  cursor: pointer;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.25), 0 4px 0 #54170f, 0 7px 12px rgba(0,0,0,0.3);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+}
+.seal-btn:active { transform: translateY(3px); box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #54170f, 0 3px 6px rgba(0,0,0,0.3); }
+.seal-btn:disabled { filter: grayscale(0.6) brightness(0.85); cursor: not-allowed; opacity: 0.7; }
+.big-btn { font-size: 24px; padding: 18px; }
+
+.ghost-btn {
+  display: block; width: 100%;
+  font-family: "IM Fell English", serif;
+  font-size: 16px; letter-spacing: 1px;
+  color: var(--ink);
+  background: rgba(255, 250, 235, 0.4);
+  border: 2px solid var(--ink-soft);
+  border-radius: 6px;
+  padding: 11px 14px; margin: 10px 0; cursor: pointer;
+}
+.ghost-btn:active { transform: scale(0.98); }
+
+.link-btn {
+  display: block; width: 100%;
+  background: none; border: none;
+  color: var(--ink-faint);
+  font-family: "Crimson Text", serif; font-style: italic;
+  font-size: 14px; text-decoration: underline; cursor: pointer;
+  margin: 6px 0 0;
+}
+
+/* ---------------- War Room: front line ---------------- */
+.warroom-head { text-align: center; margin-top: 6px; }
+.dispatch-stamp {
+  display: inline-block;
+  font-family: "Rye", serif;
+  font-size: 13px; letter-spacing: 2px;
+  color: var(--wax);
+  border: 2px solid var(--wax);
+  border-radius: 4px;
+  padding: 4px 12px;
+  transform: rotate(-2deg);
+  background: rgba(140, 46, 34, 0.06);
+}
+
+.front-card { padding-bottom: 14px; }
+.front-towns { display: flex; justify-content: space-between; font-family: "Rye", serif; font-size: 14px; margin-bottom: 6px; }
+.front-side.phi { color: var(--phi); }
+.front-side.ny { color: var(--ny); }
+.front-bar {
+  position: relative;
+  height: 26px;
+  border-radius: 13px;
+  background: linear-gradient(90deg, var(--ny) 0%, var(--ny) 50%, var(--ny) 100%);
+  border: 2px solid var(--ink-soft);
+  overflow: visible;
+}
+.front-fill-phi {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 50%;
+  background: linear-gradient(90deg, var(--phi), #1c5a4b);
+  border-radius: 11px 0 0 11px;
+  transition: width 0.8s cubic-bezier(.2,.8,.2,1);
+}
+.front-marker {
+  position: absolute; top: -8px; left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.8s cubic-bezier(.2,.8,.2,1);
+  z-index: 2;
+}
+.front-flag {
+  display: inline-block;
+  font-size: 22px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
+}
+.front-label { text-align: center; font-family: "IM Fell English", serif; font-size: 16px; margin: 12px 0 0; }
+.front-label strong { color: var(--wax); letter-spacing: 1px; }
+
+/* ---------------- Ticker ---------------- */
+.ticker {
+  overflow: hidden;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: 6px 0 4px;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+.ticker-track {
+  display: inline-block;
+  font-family: "IM Fell English", serif; font-style: italic;
+  font-size: 14px; color: var(--ink-soft);
+  white-space: nowrap;
+  animation: scroll-left 26s linear infinite;
+  padding-left: 100%;
+}
+.ticker-track:hover { animation-play-state: paused; }
+.ticker-item { margin-right: 36px; }
+.ticker-item::before { content: "✦ "; color: var(--wax); }
+@keyframes scroll-left { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+
+/* ---------------- Rank card ---------------- */
+.rank-card { padding-bottom: 14px; }
+.rank-row { display: flex; align-items: center; gap: 12px; }
+.rank-insignia { font-size: 26px; color: var(--gold); min-width: 60px; letter-spacing: 2px; }
+.rank-meta { flex: 1; }
+.rank-title { font-family: "Rye", serif; font-size: 20px; }
+.rank-sub { font-size: 14px; color: var(--ink-faint); }
+.rank-army { font-size: 28px; }
+.progress-rail {
+  height: 12px; border-radius: 6px; margin: 12px 0 6px;
+  background: rgba(58,42,22,0.18); border: 1px solid var(--ink-soft);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), #c2a14e);
+  width: 0%; transition: width 0.8s ease;
+}
+.rank-next { font-size: 13px; color: var(--ink-faint); font-style: italic; text-align: right; }
+
+/* ---------------- Tabs & boards ---------------- */
+.tabs { display: flex; gap: 6px; margin-top: 6px; }
+.tab {
+  flex: 1;
+  font-family: "IM Fell English", serif;
+  font-size: 14px; letter-spacing: 0.5px;
+  background: rgba(255,250,235,0.35);
+  border: 2px solid var(--ink-soft);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  color: var(--ink-soft);
+  padding: 8px 4px; cursor: pointer;
+}
+.tab.active { background: linear-gradient(135deg, #efe3c8, #e2d3ad); color: var(--ink); font-weight: 700; }
+.board-card { margin-top: 0; border-radius: 0 0 4px 4px; }
+
+.row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 4px;
+  border-bottom: 1px dotted var(--rule);
+}
+.row:last-child { border-bottom: none; }
+.row-rank { font-family: "Rye", serif; font-size: 16px; color: var(--ink-faint); min-width: 26px; text-align: center; }
+.row-army { font-size: 20px; }
+.row-main { flex: 1; min-width: 0; }
+.row-name { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-sub { font-size: 13px; color: var(--ink-faint); }
+.row-score { font-family: "IM Fell English", serif; font-size: 18px; font-weight: 700; }
+.row-insignia { color: var(--gold); font-size: 13px; }
+
+.war-split { display: flex; gap: 10px; }
+.war-col { flex: 1; text-align: center; padding: 10px; border-radius: 6px; }
+.war-col.phi { background: linear-gradient(135deg, rgba(20,70,59,0.18), rgba(20,70,59,0.05)); border: 1px solid var(--phi); }
+.war-col.ny { background: linear-gradient(135deg, rgba(26,43,74,0.18), rgba(26,43,74,0.05)); border: 1px solid var(--ny); }
+.war-col-emoji { font-size: 30px; }
+.war-col-name { font-family: "Rye", serif; font-size: 14px; }
+.war-num { font-family: "IM Fell English", serif; font-size: 22px; font-weight: 700; }
+.war-num-label { font-size: 11px; color: var(--ink-faint); letter-spacing: 1px; }
+.war-sub { font-size: 14px; margin-top: 4px; color: var(--ink-soft); }
+
+.empty-state {
+  text-align: center; font-style: italic; color: var(--ink-faint);
+  padding: 18px 8px; font-family: "IM Fell English", serif; font-size: 15px;
+}
+.traitor-note { text-align: center; font-size: 13px; color: var(--wax); font-style: italic; margin-bottom: 8px; }
+
+/* ---------------- Battle ---------------- */
+.battle-head { display: flex; justify-content: space-between; align-items: baseline; margin: 8px 2px 6px; }
+.battle-name { font-family: "Rye", serif; font-size: 19px; color: var(--ink); }
+.battle-progress { font-family: "IM Fell English", serif; font-size: 16px; color: var(--ink-faint); }
+
+.fuse-rail {
+  position: relative; height: 14px; border-radius: 7px;
+  background: rgba(58,42,22,0.25);
+  border: 1px solid var(--ink-soft);
+  overflow: visible; margin: 4px 0 16px;
+}
+.fuse-fill {
+  height: 100%; width: 100%;
+  background: linear-gradient(90deg, #7a1a10, #d0731f, #f0c419);
+  border-radius: 7px;
+  transform-origin: left center;
+}
+.fuse-spark {
+  position: absolute; top: -7px; left: 100%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+.fuse-rail.low .fuse-fill { background: linear-gradient(90deg, #7a1a10, #b01818); }
+
+.question-card { min-height: 150px; }
+.cat-badge {
+  display: inline-block;
+  font-family: "Rye", serif;
+  font-size: 12px; letter-spacing: 1px;
+  color: #f3ead4;
+  background: var(--ink-soft);
+  border-radius: 3px;
+  padding: 4px 10px; margin-bottom: 12px;
+}
+.q-prompt { font-family: "IM Fell English", serif; font-size: 21px; line-height: 1.3; margin-bottom: 16px; }
+.choices { display: grid; gap: 10px; }
+.choice {
+  font-family: "Crimson Text", serif;
+  font-size: 18px; text-align: left;
+  background: rgba(255, 250, 235, 0.5);
+  border: 2px solid var(--ink-soft);
+  border-radius: 6px;
+  padding: 13px 14px; cursor: pointer;
+  color: var(--ink);
+  transition: transform 0.08s, background 0.1s;
+}
+.choice:active { transform: scale(0.99); }
+.choice:disabled { cursor: default; }
+.choice.correct { background: linear-gradient(135deg, #2f6b4f, #1c5a3d); color: #f3ead4; border-color: #14463b; }
+.choice.wrong { background: linear-gradient(135deg, #9a3326, #7a2118); color: #f3ead4; border-color: #5a1c14; }
+.choice.dim { opacity: 0.5; }
+
+/* Feedback dispatch box */
+.feedback {
+  margin-top: 14px;
+  border: 2px solid var(--ink-soft);
+  border-radius: 6px;
+  padding: 14px;
+  background: linear-gradient(135deg, #efe3c8, #e2d3ad);
+  box-shadow: 0 3px 10px rgba(58,42,22,0.25);
+  cursor: pointer;
+  animation: fade 0.3s ease;
+}
+.feedback.correct-fb { border-color: var(--phi); }
+.feedback.wrong-fb { border-color: var(--wax); }
+.feedback-inner { font-family: "IM Fell English", serif; font-size: 17px; }
+.fb-points { font-family: "Rye", serif; font-size: 20px; display: block; margin-bottom: 6px; }
+.fb-points.good { color: var(--phi); }
+.fb-points.bad { color: var(--wax); }
+.fb-espionage {
+  display: inline-block; margin-top: 8px;
+  font-family: "Rye", serif; font-size: 13px;
+  background: var(--ny); color: var(--ny-accent);
+  padding: 3px 9px; border-radius: 3px;
+}
+.tap-hint { text-align: right; font-size: 13px; color: var(--ink-faint); font-style: italic; margin-top: 8px; }
+
+/* ---------------- After-action report ---------------- */
+.report-battle { font-family: "Rye", serif; font-size: 24px; margin: 6px 0; text-align: center; }
+.report-card { text-align: center; }
+.report-score { font-family: "Rye", serif; font-size: 52px; color: var(--wax); line-height: 1; }
+.report-line { font-family: "IM Fell English", serif; font-size: 17px; margin-top: 8px; }
+.report-line.espionage { color: var(--ny); font-style: italic; }
+
+.rankup-banner {
+  text-align: center;
+  font-family: "Rye", serif;
+  font-size: 22px;
+  color: #f6ecd2;
+  background: radial-gradient(circle at 30% 25%, #c2a14e, var(--gold) 60%, #6f561c);
+  border: 2px solid #54400f;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 8px 0 4px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  animation: pop 0.5s cubic-bezier(.2,1.4,.4,1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+@keyframes pop { 0% { transform: scale(0.6); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+
+.casualties { display: grid; gap: 10px; }
+.casualty {
+  border: 2px solid var(--wax);
+  border-radius: 6px;
+  padding: 12px;
+  background: linear-gradient(135deg, rgba(140,46,34,0.08), rgba(140,46,34,0.02));
+}
+.casualty-roast { font-family: "IM Fell English", serif; font-style: italic; font-size: 16px; }
+.casualty-q { font-size: 14px; color: var(--ink-soft); margin-top: 6px; }
+.casualty-a { font-size: 14px; margin-top: 4px; }
+.casualty-a strong { color: var(--phi); }
+
+/* ---------------- Toast ---------------- */
+.toast {
+  position: fixed; left: 50%; bottom: 24px;
+  transform: translateX(-50%) translateY(120px);
+  max-width: 440px; width: calc(100% - 32px);
+  background: var(--ink);
+  color: #f3ead4;
+  font-family: "IM Fell English", serif;
+  border: 2px solid var(--wax);
+  border-radius: 6px;
+  padding: 12px 16px;
+  z-index: 100;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  text-align: center;
+}
+.toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+.footer {
+  text-align: center;
+  font-family: "IM Fell English", serif;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--ink-faint);
+  padding: 10px 16px 24px;
+  opacity: 0.8;
+}
+
+/* Desktop niceties */
+@media (min-width: 520px) {
+  .title { font-size: 54px; }
+}

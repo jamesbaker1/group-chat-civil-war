@@ -1,0 +1,17 @@
+{
+  "name": "group-chat-civil-war",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Philly vs New York sports-trivia civil war game for a basketball group chat. Fought over New Jersey.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "dry-run": "wrangler deploy --dry-run",
+    "migrate:local": "wrangler d1 migrations apply civil-war-db --local",
+    "migrate:remote": "wrangler d1 migrations apply civil-war-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

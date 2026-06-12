@@ -1,0 +1,962 @@
+[
+  {
+    "id": "trivia-001",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Sixers legend stepped over Tyronn Lue in the 2001 NBA Finals?",
+    "choices": [
+      "Dikembe Mutombo",
+      "Aaron McKie",
+      "Eric Snow",
+      "Allen Iverson"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. He scored 48, crossed Lue into another dimension, then stepped over the body. The Process began with The Answer.",
+    "roast": "☠️ Could not name the man who stepped over Tyronn Lue. The single most replayed image in Philadelphia basketball history. We talkin' about practice.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-002",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which year did Joel Embiid win his NBA MVP award?",
+    "choices": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. 2023. The Process finally produced an MVP, and somewhere Sam Hinkie nodded once and said nothing.",
+    "roast": "☠️ Did not know Embiid's MVP came in 2023. Trusting the Process means knowing when it paid out, soldier.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-003",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Who began the 'Linsanity' run with the Knicks in February 2012?",
+    "choices": [
+      "Iman Shumpert",
+      "Jeremy Lin",
+      "Landry Fields",
+      "Toney Douglas"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. For two glorious weeks Madison Square Garden belonged to an undrafted Harvard point guard. Then it ended, as Knicks things do.",
+    "roast": "☠️ Forgot Linsanity. An entire city lost its mind over Jeremy Lin and you forgot the name. The Garden weeps.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-004",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Whose iconic Game 7 limp-out gave the Knicks their 1970 title spark against the Lakers?",
+    "choices": [
+      "Willis Reed",
+      "Walt Frazier",
+      "Dave DeBusschere",
+      "Bill Bradley"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Willis Reed dragged a torn thigh out of the tunnel, hit his first two shots, and the Garden has never been louder since.",
+    "roast": "☠️ Did not know Willis Reed limped out of the tunnel in Game 7, 1970. It is the most sacred memory the Knicks have. Guard it better.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-005",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "What was the name of the Sixers' rebuilding strategy under GM Sam Hinkie?",
+    "choices": [
+      "The Plan",
+      "The Rebuild",
+      "The Tank",
+      "The Process"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Trust the Process. You clearly did.",
+    "roast": "☠️ Fell at his post, confidently asserting Philadelphia rebuilt via 'The Tank.' It is THE PROCESS. Sam Hinkie has logged off in disgust.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-006",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Sixers guard was the No. 1 overall pick in 1996 and became the smallest scoring champion in NBA history?",
+    "choices": [
+      "Moses Malone",
+      "Julius Erving",
+      "Allen Iverson",
+      "Charles Barkley"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Allen Iverson, the No. 1 pick in 1996, smallest scoring champ the league had seen, and a Philadelphia saint.",
+    "roast": "☠️ Could not identify Allen Iverson. The Answer. The franchise. The reason South Philly still chants his name.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-007",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which star did the Knicks trade a haul to acquire from Denver in February 2011?",
+    "choices": [
+      "Amar'e Stoudemire",
+      "Carmelo Anthony",
+      "Tyson Chandler",
+      "J.R. Smith"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Carmelo Anthony came home to New York, and the Knicks gave up half the roster to do it. Worth it? The standings say no.",
+    "roast": "☠️ Forgot the Carmelo Anthony trade saga of 2011. The Knicks mortgaged everything for Melo and you can't even remember it happened.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-008",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "In which year did the Philadelphia 76ers win their most recent NBA championship?",
+    "choices": [
+      "1983",
+      "1977",
+      "1967",
+      "2001"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. 1983. Moses Malone called it 'Fo, Fo, Fo' and the Sixers nearly swept the whole playoffs. They have not won since.",
+    "roast": "☠️ Did not know the Sixers last won it all in 1983. That is 40-plus years of Process, soldier. A long, long wait.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-009",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Entering the 2025-26 season, how many NBA championships had the New York Knicks won?",
+    "choices": [
+      "0",
+      "6",
+      "4",
+      "2"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Two — 1970 and 1973, both behind Willis Reed and Clyde. Every ring since has had to be imported.",
+    "roast": "☠️ Got the Knicks' classic ring count wrong. It is exactly two — 1970 and 1973, both in the Nixon era.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-010",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which 2013 Nets trade sent multiple first-round picks to Boston for aging stars?",
+    "choices": [
+      "The Durant trade",
+      "The Harden trade",
+      "The Garnett-Pierce trade",
+      "The Vince Carter trade"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Kevin Garnett and Paul Pierce for a war chest of picks Boston used to rebuild. One of the most lopsided trades in NBA history.",
+    "roast": "☠️ Forgot the Nets handing Boston the picks that built a contender. Brooklyn bet the future on old legs and lost the bet.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-011",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Hall of Famer was nicknamed 'Dr. J' and starred for the 76ers?",
+    "choices": [
+      "George Gervin",
+      "Julius Erving",
+      "Darryl Dawkins",
+      "Bobby Jones"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Julius Erving brought the windmill dunk and a No. 6 jersey hanging in the rafters.",
+    "roast": "☠️ Could not name Dr. J. Julius Erving made the dunk an art form in Philadelphia and you whiffed on the diagnosis.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-012",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Knicks point guard from the 70s title teams was nicknamed 'Clyde'?",
+    "choices": [
+      "Walt Frazier",
+      "Earl Monroe",
+      "Dick Barnett",
+      "Bill Bradley"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Walt 'Clyde' Frazier, still calling Knicks games and still the best-dressed man at the Garden.",
+    "roast": "☠️ Did not know Clyde is Walt Frazier. He's been on the broadcast for decades, posting and toasting without you.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-013",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which guard did the Sixers draft No. 1 overall in 2017, only to watch his jump shot mysteriously vanish?",
+    "choices": [
+      "Ben Simmons",
+      "Dario Saric",
+      "Jaylen Brown",
+      "Markelle Fultz"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Markelle Fultz, the No. 1 pick of 2017 who forgot how to shoot. The Process is not always kind.",
+    "roast": "☠️ Slipped up on Markelle Fultz, the 2017 No. 1 pick whose shot disappeared. Even the misfires are part of the Process.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-014",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "What is the home arena of the New York Knicks?",
+    "choices": [
+      "Barclays Center",
+      "Prudential Center",
+      "Madison Square Garden",
+      "Wells Fargo Center"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Madison Square Garden — the World's Most Famous Arena, where the tickets cost a mortgage payment and the heartbreak is complimentary.",
+    "roast": "☠️ Did not know the Knicks play at Madison Square Garden. The most famous arena on earth. Pack your kit and go home.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-015",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "As of 2025, what is the current name of the South Philly arena the Sixers and Flyers share?",
+    "choices": [
+      "Wells Fargo Center",
+      "Xfinity Mobile Arena",
+      "Wachovia Center",
+      "CoreStates Center"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. The Wells Fargo deal expired and the building became Xfinity Mobile Arena in August 2025. Fifth name, same warm South Philly boos.",
+    "roast": "☠️ Still calling it the Wells Fargo Center. The sign changed to Xfinity Mobile Arena in August 2025, soldier. Read the dispatches.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-016",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which trick play did the Eagles run for a touchdown to QB Nick Foles in Super Bowl LII?",
+    "choices": [
+      "The Philly Special",
+      "The Music City Miracle",
+      "The Minneapolis Miracle",
+      "The Flea Flicker"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. The Philly Special. The backup quarterback caught the touchdown. The Patriots never recovered. The city never shut up about it.",
+    "roast": "☠️ Forgot the Philly Special — the trick play that won Philadelphia its first Super Bowl. They put it on a statue. You forgot it.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-017",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which team did the Eagles defeat to win Super Bowl LII in the 2017 season?",
+    "choices": [
+      "Seattle Seahawks",
+      "Atlanta Falcons",
+      "Kansas City Chiefs",
+      "New England Patriots"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. The Eagles beat Tom Brady's Patriots 41-33 for the first Lombardi in franchise history. Fly Eagles Fly.",
+    "roast": "☠️ Did not know the Eagles beat the Patriots in Super Bowl LII. Philadelphia's first Lombardi and you fumbled the memory.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-018",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Jets QB became infamous for the 2012 'Butt Fumble' on Thanksgiving night?",
+    "choices": [
+      "Geno Smith",
+      "Tim Tebow",
+      "Mark Sanchez",
+      "Ryan Fitzpatrick"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Mark Sanchez ran face-first into his own lineman's backside and fumbled. It aired on Thanksgiving. America gave thanks.",
+    "roast": "☠️ Could not name the Butt Fumble culprit. Mark Sanchez. The most New York Jets play in New York Jets history.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-019",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Giants QB led two Super Bowl upsets over the Patriots?",
+    "choices": [
+      "Phil Simms",
+      "Eli Manning",
+      "Kerry Collins",
+      "Daniel Jones"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Eli Manning, twice the Patriots' nightmare, including the Helmet Catch season of 2007.",
+    "roast": "☠️ Forgot Eli Manning beat the Patriots in two Super Bowls. The Giants' whole personality and you blanked.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-020",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "The 2007 Giants' 'Helmet Catch' in Super Bowl XLII was made by which receiver?",
+    "choices": [
+      "David Tyree",
+      "Plaxico Burress",
+      "Amani Toomer",
+      "Steve Smith"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. David Tyree pinned the ball to his helmet to keep the drive alive. Plaxico Burress caught the winner soon after.",
+    "roast": "☠️ Did not know David Tyree made the Helmet Catch. The most improbable grab in Super Bowl history. Pressed it right to his crown.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-021",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "In what year did the Phillies win their first World Series, ended by Tug McGraw's final strikeout?",
+    "choices": [
+      "2008",
+      "1983",
+      "1993",
+      "1980"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. 1980. The Phillies' first-ever title in nearly a century of trying. Tug McGraw struck out Willie Wilson and the city exhaled.",
+    "roast": "☠️ Missed the 1980 Phillies, their first World Series in franchise history. A century of waiting and you forgot the payoff.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-022",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Phillies closer gave up Joe Carter's World Series-ending walk-off homer in 1993?",
+    "choices": [
+      "Lenny Dykstra",
+      "John Kruk",
+      "Mitch Williams",
+      "Darren Daulton"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Mitch 'Wild Thing' Williams gave up Joe Carter's walk-off homer in 1993. Philadelphia has not fully forgiven him.",
+    "roast": "☠️ Forgot Mitch Williams served up the Joe Carter walk-off in 1993. Wild Thing — the Phillies pitcher Philly loves to blame.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-023",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "In which year did the Phillies win the World Series over the Tampa Bay Rays?",
+    "choices": [
+      "2007",
+      "2008",
+      "2009",
+      "2011"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. 2008. Brad Lidge was perfect all year, and the city got its first title in 25 years. Chase Utley said the rest.",
+    "roast": "☠️ Did not know the Phillies beat the Rays in 2008. Philadelphia's most recent World Series. Shameful.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-024",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "How many World Series titles have the New York Yankees won — the most in MLB history?",
+    "choices": [
+      "27",
+      "23",
+      "20",
+      "30"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. 27 rings. The Evil Empire's whole identity. They will remind you of all 27, unprompted, forever.",
+    "roast": "☠️ Botched the Yankees' ring count. It's 27 — the number every Yankees fan tattoos on their soul. The Empire is unamused.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-025",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Yankees captain wore No. 2 and got 3,000-plus career hits, all with New York?",
+    "choices": [
+      "Alex Rodriguez",
+      "Bernie Williams",
+      "Don Mattingly",
+      "Derek Jeter"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Derek Jeter, Mr. November, the Captain, 3,465 career hits and a No. 2 retired forever in the Bronx.",
+    "roast": "☠️ Could not name Derek Jeter. The Captain. No. 2. The flip play. Even Mets fans know this one.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-026",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Whose ground ball rolled under Bill Buckner's glove to give the Mets Game 6 of the 1986 World Series?",
+    "choices": [
+      "Keith Hernandez",
+      "Ray Knight",
+      "Mookie Wilson",
+      "Gary Carter"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Mookie Wilson hit the trickler that rolled through Buckner's legs. The Mets stole Game 6 and then the title.",
+    "roast": "☠️ Forgot Mookie Wilson's grounder through Buckner's legs in 1986. The Mets' last great miracle and you let it roll right past you.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-027",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "In which year did the Mets win their most recent World Series?",
+    "choices": [
+      "1969",
+      "1986",
+      "2000",
+      "2015"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. 1986. The Mets have not won since. Somewhere in Queens, a Mets fan feels a brief and unfamiliar warmth.",
+    "roast": "☠️ Did not know the Mets last won in 1986. It has been a long, soggy wait in Flushing. The misery is the brand.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-028",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Phillies third baseman is the franchise's all-time home run leader and wore No. 20?",
+    "choices": [
+      "Mike Schmidt",
+      "Ryan Howard",
+      "Chase Utley",
+      "Pat Burrell"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Mike Schmidt, 548 career homers, three MVPs, and the greatest third baseman the game has seen. No. 20 retired.",
+    "roast": "☠️ Could not name Mike Schmidt. The greatest Phillie ever, 548 home runs, No. 20 in the rafters. Hall of shame for you.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-029",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "The mid-1970s Flyers teams that won back-to-back Stanley Cups were nicknamed what?",
+    "choices": [
+      "The Orange Crush",
+      "The Flying Frenchmen",
+      "The Legion of Doom",
+      "The Broad Street Bullies"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. The Broad Street Bullies won back-to-back Stanley Cups in 1974 and 1975, fists first. Still the Flyers' only Cups.",
+    "roast": "☠️ Forgot the Broad Street Bullies. The Flyers' only Stanley Cups, won by the meanest team in hockey.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-030",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Hall of Fame goaltender backstopped both Flyers Stanley Cup wins and wore No. 1?",
+    "choices": [
+      "Pelle Lindbergh",
+      "Ron Hextall",
+      "Bernie Parent",
+      "Roman Cechmanek"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Bernie Parent backstopped both Cup wins, and Kate Smith's anthem became the Flyers' lucky omen.",
+    "roast": "☠️ Did not know Bernie Parent. The Hall of Fame goalie behind both Flyers Cups. No. 1 hangs in the rafters.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-031",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "In which year did the New York Rangers end a 54-year drought to win the Stanley Cup?",
+    "choices": [
+      "1979",
+      "1994",
+      "1986",
+      "2014"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. 1994. Mark Messier guaranteed it, and the Garden chant of 'Now I can die in peace' became legend.",
+    "roast": "☠️ Did not know the Rangers won the Cup in 1994. The end of a 54-year curse. The Garden has not stopped reliving it.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-032",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which New York-area hockey dynasty won four straight Stanley Cups from 1980 to 1983?",
+    "choices": [
+      "New York Islanders",
+      "New York Rangers",
+      "New Jersey Devils",
+      "Brooklyn Americans"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. The New York Islanders, four Cups in a row, the last true NHL dynasty of that magnitude.",
+    "roast": "☠️ Forgot the Islanders' four-straight Cups in the early 80s. A genuine dynasty out on Long Island. Disrespectful.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-033",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Rangers captain 'guaranteed' a Game 6 win in the 1994 playoffs and delivered a hat trick?",
+    "choices": [
+      "Brian Leetch",
+      "Mike Richter",
+      "Adam Graves",
+      "Mark Messier"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Mark Messier called his shot and backed it with a hat trick. The most clutch promise in Rangers history.",
+    "roast": "☠️ Did not know Mark Messier's guarantee. The Captain promised a win and delivered three goals. Legendary, forgotten by you.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-034",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Eagles quarterback led the team to four straight NFC title games (2001-2004) and Super Bowl XXXIX?",
+    "choices": [
+      "Randall Cunningham",
+      "Michael Vick",
+      "Donovan McNabb",
+      "Ron Jaworski"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Donovan McNabb led the Eagles to four straight NFC title games and the Super Bowl after the 2004 season.",
+    "roast": "☠️ Could not name Donovan McNabb. The Eagles QB Philly booed on draft day and then rode to a Super Bowl. Classic Philly.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-035",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Giants linebacker, a Hall of Famer, wore No. 56 and revolutionized the pass rush?",
+    "choices": [
+      "Harry Carson",
+      "Lawrence Taylor",
+      "Carl Banks",
+      "Michael Strahan"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Lawrence Taylor, LT, No. 56 retired, perhaps the most dominant defensive player the NFL has ever seen.",
+    "roast": "☠️ Did not know Lawrence Taylor. LT. No. 56. He invented modern fear for offensive coordinators. Unforgivable.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-036",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Giants defensive end set what was then the NFL single-season sack record with 22.5 in 2001?",
+    "choices": [
+      "Michael Strahan",
+      "Osi Umenyiora",
+      "Justin Tuck",
+      "Jason Pierre-Paul"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Michael Strahan, 22.5 sacks in 2001 — the NFL record until Myles Garrett's 23 in 2025. Now a morning-show staple.",
+    "roast": "☠️ Forgot Michael Strahan's 22.5-sack season. A Giants record and a gap-toothed Hall of Fame career. Sacked again.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-037",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which running back, nicknamed 'Shady,' is the Eagles' all-time leading rusher?",
+    "choices": [
+      "Duce Staley",
+      "Brian Westbrook",
+      "Jay Ajayi",
+      "LeSean McCoy"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. LeSean McCoy, 'Shady,' the Eagles' all-time leading rusher before his trade to Buffalo.",
+    "roast": "☠️ Could not name LeSean McCoy, the Eagles' all-time leading rusher. Shady ran circles around you.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-038",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "What food is Philadelphia most famous for, sold at Pat's and Geno's in South Philly?",
+    "choices": [
+      "The bacon-egg-and-cheese",
+      "The hoagie",
+      "The cheesesteak",
+      "The soft pretzel"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. The cheesesteak. Whiz or provolone, that is the only war older than this one.",
+    "roast": "☠️ Did not know Philadelphia's signature food is the cheesesteak. Pat's and Geno's stare across the street at your shame.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-039",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which convenience store is a beloved Philadelphia institution famous for hoagies and touchscreen ordering?",
+    "choices": [
+      "Sheetz",
+      "Wawa",
+      "Bodega",
+      "QuickChek"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Wawa. The unofficial fourth branch of Philadelphia government. Gobble, gobble.",
+    "roast": "☠️ Could not identify Wawa, the holy convenience store of the Delaware Valley. A Sheetz answer is grounds for exile.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-040",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which fictional boxer ran up the Philadelphia Museum of Art steps in a beloved 1976 film?",
+    "choices": [
+      "Rocky Balboa",
+      "Apollo Creed",
+      "Jake LaMotta",
+      "Clubber Lang"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Rocky Balboa. There's a statue. There are tourists. There is no escaping the theme song.",
+    "roast": "☠️ Did not know Rocky Balboa ran the Art Museum steps. The most Philadelphia thing ever filmed. Yo, that's embarrassing.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-041",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "What small corner grocery store is a defining feature of New York City neighborhoods, often with a cat?",
+    "choices": [
+      "The Wawa",
+      "The five-and-dime",
+      "The deli counter",
+      "The bodega"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. The bodega. Open at all hours, the bacon-egg-and-cheese, and yes, the cat is in charge.",
+    "roast": "☠️ Did not know the bodega is the soul of New York street life. The bodega cat is offended on the city's behalf.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-042",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "What is the classic New York breakfast sandwich ordered at any bodega?",
+    "choices": [
+      "The cheesesteak",
+      "The pork roll",
+      "The bacon, egg and cheese",
+      "The everything bagel with lox"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. The bacon-egg-and-cheese on a roll, salt-pepper-ketchup. Cheesesteak against bacon-egg-and-cheese — that is this war.",
+    "roast": "☠️ Could not name the bacon-egg-and-cheese, New York's breakfast of champions. The bodega will not serve you.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-043",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which agency operates New York City's subway system?",
+    "choices": [
+      "SEPTA",
+      "MTA",
+      "PATH",
+      "NJ Transit"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. The MTA runs the subway that never sleeps, never quite arrives on time, and never explains why it's stopped in a tunnel.",
+    "roast": "☠️ Confused the MTA with SEPTA. SEPTA is Philadelphia's. The subway delay you're stuck in is brought to you by the MTA.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-044",
+    "category": "trivia",
+    "city": "BOTH",
+    "prompt": "The New York Giants and Jets actually play their home games in which state?",
+    "choices": [
+      "New Jersey",
+      "New York",
+      "Connecticut",
+      "Pennsylvania"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. MetLife Stadium sits in East Rutherford, New Jersey — which is, of course, what this war is about.",
+    "roast": "☠️ Believed the Giants and Jets play in New York. They play in New Jersey — which is, of course, what this war is about.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-045",
+    "category": "trivia",
+    "city": "BOTH",
+    "prompt": "Which NHL team plays at the Prudential Center in Newark, New Jersey?",
+    "choices": [
+      "New York Rangers",
+      "New York Islanders",
+      "Philadelphia Flyers",
+      "New Jersey Devils"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. The New Jersey Devils, three-time Cup champions, sitting right on the contested front line of this very war.",
+    "roast": "☠️ Did not know the Devils play in Newark. They literally hold the front line of New Jersey. Pay attention to the battlefield.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-046",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Hall of Fame center anchored the Sixers' 1983 title team and predicted 'Fo, Fo, Fo'?",
+    "choices": [
+      "Wilt Chamberlain",
+      "Darryl Dawkins",
+      "Moses Malone",
+      "Andrew Bynum"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Moses Malone predicted three sweeps. The Sixers nearly delivered, losing just one playoff game on the way to the 1983 ring.",
+    "roast": "☠️ Forgot Moses Malone said 'Fo, Fo, Fo' in 1983. The MVP center who finally got the Sixers over the top. A sweep of your dignity.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-047",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which center did the Sixers draft No. 3 overall in 2014, who sat two seasons hurt before becoming the face of the Process?",
+    "choices": [
+      "Ben Simmons",
+      "Joel Embiid",
+      "Jahlil Okafor",
+      "Nerlens Noel"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Joel Embiid, drafted No. 3 in 2014, sat two seasons with injury, then arrived and the Process had its centerpiece.",
+    "roast": "☠️ Did not know Joel Embiid was the 2014 No. 3 pick. The franchise center the whole Process was waiting on. The Process is disappointed.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-048",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which enforcer of the 90s Knicks, beloved as 'Oak,' protected Patrick Ewing in the paint?",
+    "choices": [
+      "Charles Oakley",
+      "Anthony Mason",
+      "Charles Smith",
+      "John Starks"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Charles Oakley, the muscle of the Pat Riley-era Knicks, beloved enough that his Garden feud made national news.",
+    "roast": "☠️ Forgot Charles Oakley, the 90s Knicks enforcer. Oak protected Ewing and the paint. He would not protect your reputation here.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-049",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Hall of Fame center led the Knicks to the 1994 Finals and wore No. 33?",
+    "choices": [
+      "Bill Cartwright",
+      "Willis Reed",
+      "Marcus Camby",
+      "Patrick Ewing"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Patrick Ewing, No. 33 retired, the franchise center who carried the Knicks but never got the ring.",
+    "roast": "☠️ Could not name Patrick Ewing. The greatest Knick of the modern era and a No. 33 in the rafters. He gave the Garden everything and never got the parade.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-050",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Nets star was traded to Phoenix in February 2023, effectively ending the Brooklyn superteam era?",
+    "choices": [
+      "Kyrie Irving",
+      "James Harden",
+      "Kevin Durant",
+      "Ben Simmons"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Kevin Durant was traded to Phoenix in February 2023, the final domino in the collapse of the Brooklyn superteam.",
+    "roast": "☠️ Forgot Kevin Durant was traded out of Brooklyn in 2023. The superteam imploded spectacularly and you missed the funeral.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-051",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Phillies second baseman of the 2008 champions delivered the unprintable 'World champions' parade speech?",
+    "choices": [
+      "Jimmy Rollins",
+      "Chase Utley",
+      "Ryan Howard",
+      "Shane Victorino"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. Chase Utley grabbed the mic at the 2008 parade and declared the Phillies 'world champions' with an extra, beloved adjective.",
+    "roast": "☠️ Forgot Chase Utley's legendary parade speech in 2008. 'World champions' has never been said with more Philadelphia in it.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-052",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which Phillies pitcher threw a regular-season perfect game and a playoff no-hitter in 2010?",
+    "choices": [
+      "Roy Halladay",
+      "Cole Hamels",
+      "Cliff Lee",
+      "Brad Lidge"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Roy Halladay, a regular-season perfect game AND a postseason no-hitter in 2010. A legendary, and bittersweet, season.",
+    "roast": "☠️ Did not know Roy Halladay's 2010 perfect game and playoff no-hitter. One of the great pitching seasons ever. Doc deserved better than this.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-053",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Yankees closer wore No. 42 and holds the career saves record?",
+    "choices": [
+      "Goose Gossage",
+      "Dave Righetti",
+      "John Wetteland",
+      "Mariano Rivera"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Mariano Rivera, 652 career saves and the first unanimous Hall of Famer. The last man to wear No. 42 every day.",
+    "roast": "☠️ Could not name Mariano Rivera. The greatest closer ever, the cutter, the unanimous Hall of Famer. Enter Sandman, exit you.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-054",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which Yankees outfielder set the AL single-season home run record with 62 in 2022?",
+    "choices": [
+      "Giancarlo Stanton",
+      "Gary Sanchez",
+      "Aaron Judge",
+      "Anthony Rizzo"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Aaron Judge, 62 home runs in 2022, breaking Roger Maris's 61-year-old American League record.",
+    "roast": "☠️ Forgot Aaron Judge's 62 home runs in 2022. An AL record that toppled Roger Maris. The Empire's modern monster.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-055",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "What is the name of the Phillies' beloved, furry, green mascot?",
+    "choices": [
+      "Gritty",
+      "The Phillie Phanatic",
+      "Mr. Met",
+      "The Swoop"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. The Phillie Phanatic, the chaotic green icon of Citizens Bank Park since 1978. Gritty is the Flyers' menace.",
+    "roast": "☠️ Mixed up the Phillie Phanatic with Gritty. Gritty terrorizes for the Flyers. The Phanatic is the Phillies' green legend.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-056",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which orange, googly-eyed Flyers mascot debuted in 2018 and became an internet legend?",
+    "choices": [
+      "Gritty",
+      "The Phanatic",
+      "Youppi",
+      "Slapshot"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Gritty, the chaotic orange menace of the Flyers, instantly adopted as a folk hero of the internet.",
+    "roast": "☠️ Did not know Gritty is the Flyers mascot. The unhinged orange icon born in 2018. He sees this. He's coming.",
+    "difficulty": 1
+  },
+  {
+    "id": "trivia-057",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "What is the name of the New York Mets' baseball-headed mascot?",
+    "choices": [
+      "Homer",
+      "Mettle the Mule",
+      "The Apple",
+      "Mr. Met"
+    ],
+    "answer_index": 3,
+    "flavor": "Correct. Mr. Met, the giant baseball-headed mascot and one of the oldest in all of sports.",
+    "roast": "☠️ Could not name Mr. Met. The baseball-headed face of Queens. Even on his bad days he is more famous than your answer.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-058",
+    "category": "trivia",
+    "city": "NY",
+    "prompt": "Which coach of the bruising early-90s Knicks later coached the Heat and built the Miami dynasty?",
+    "choices": [
+      "Jeff Van Gundy",
+      "Don Nelson",
+      "Pat Riley",
+      "Lenny Wilkens"
+    ],
+    "answer_index": 2,
+    "flavor": "Correct. Pat Riley coached the bruising early-90s Knicks before defecting to Miami to torment them for decades.",
+    "roast": "☠️ Did not know Pat Riley coached the 90s Knicks. Slicked-back hair, slow-it-down defense, then off to Miami. Riley remembers.",
+    "difficulty": 3
+  },
+  {
+    "id": "trivia-059",
+    "category": "trivia",
+    "city": "PHI",
+    "prompt": "Which infamous 1968 incident at an Eagles game involved fans and a stadium Santa Claus?",
+    "choices": [
+      "Fans booed the trophy",
+      "Fans threw snowballs at Santa",
+      "Fans stormed the field",
+      "Fans cheered an injury"
+    ],
+    "answer_index": 1,
+    "flavor": "Correct. In 1968 Eagles fans pelted a stadium Santa with snowballs. We threw snowballs at Santa and we'd do it again.",
+    "roast": "☠️ Did not know Eagles fans threw snowballs at Santa in 1968. The most Philadelphia origin story imaginable. They'd do it again.",
+    "difficulty": 2
+  },
+  {
+    "id": "trivia-060",
+    "category": "trivia",
+    "city": "BOTH",
+    "prompt": "Which Brooklyn arena became the Nets' home after they left New Jersey in 2012?",
+    "choices": [
+      "Barclays Center",
+      "Madison Square Garden",
+      "Prudential Center",
+      "Nassau Coliseum"
+    ],
+    "answer_index": 0,
+    "flavor": "Correct. Barclays Center in Brooklyn. The Nets fled New Jersey in 2012 — abandoning the very front line this war is fought over.",
+    "roast": "☠️ Did not know the Nets play at Barclays Center. They ditched New Jersey for Brooklyn in 2012, retreating from the battlefield entirely.",
+    "difficulty": 2
+  }
+]

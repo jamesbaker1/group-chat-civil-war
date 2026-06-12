@@ -1,0 +1,25 @@
+{
+  // Group Chat Civil War — Philly vs NY sports-trivia war, fought over New Jersey.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "group-chat-civil-war",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-01",
+  "observability": {
+    "enabled": true
+  },
+  // Static parchment frontend served from public/.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  // D1 — the war's records.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "civil-war-db",
+      "database_id": "6ec37680-e0bc-439d-bb5d-f72b329a97f1",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

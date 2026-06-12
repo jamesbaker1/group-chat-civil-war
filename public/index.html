@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#3a2a16" />
+  <title>Group Chat Civil War</title>
+  <meta name="description" content="Philly vs New York sports-trivia war. Fought over New Jersey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=IM+Fell+English:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Toast / telegraph error -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="app" class="app">
+    <!-- ===================== ENLISTMENT ===================== -->
+    <section id="screen-enlist" class="screen">
+      <header class="masthead">
+        <div class="masthead-rule">⚜ &nbsp;EST. 1860-ish&nbsp; ⚜</div>
+        <h1 class="title">GROUP CHAT<br />CIVIL WAR</h1>
+        <p class="subtitle">Brother against brother.<br />Cheesesteak against bacon-egg-and-cheese.</p>
+        <div class="masthead-rule">⚔️ &nbsp;FOUGHT OVER NEW JERSEY&nbsp; ⚔️</div>
+      </header>
+
+      <div class="parchment-card">
+        <label class="field-label" for="enlist-name">YOUR NAME, SOLDIER</label>
+        <input id="enlist-name" class="ink-input" type="text" maxlength="20" autocomplete="off"
+               placeholder="e.g. Jimmy" />
+        <p class="hint">1–20 characters. You can change sides later. The obituaries will remember.</p>
+
+        <div class="army-choice">
+          <button class="army-btn army-phi" data-army="PHI" type="button">
+            <span class="army-emoji">🔔</span>
+            <span class="army-name">Brotherly Love Brigade</span>
+            <span class="army-flavor">"We threw snowballs at Santa and we'd do it again."</span>
+          </button>
+          <button class="army-btn army-ny" data-army="NY" type="button">
+            <span class="army-emoji">🗽</span>
+            <span class="army-name">The Empire Army</span>
+            <span class="army-flavor">"Home of 27 rings and the world's most expensive sadness (the Knicks)."</span>
+          </button>
+        </div>
+        <button id="enlist-submit" class="seal-btn" type="button" disabled>✒️ SIGN THE MUSTER ROLL</button>
+      </div>
+    </section>
+
+    <!-- ===================== WAR ROOM ===================== -->
+    <section id="screen-warroom" class="screen hidden">
+      <header class="warroom-head">
+        <div class="dispatch-stamp">DISPATCH FROM THE FRONT</div>
+        <h2 class="section-title">⚜ THE FRONT ⚜</h2>
+      </header>
+
+      <!-- Front line -->
+      <div class="parchment-card front-card">
+        <div class="front-towns">
+          <span class="front-side phi">🔔 PHILLY</span>
+          <span class="front-side ny">NEW YORK 🗽</span>
+        </div>
+        <div class="front-bar" id="front-bar">
+          <div class="front-fill-phi" id="front-fill-phi"></div>
+          <div class="front-marker" id="front-marker"><span class="front-flag">⚔️</span></div>
+        </div>
+        <p class="front-label" id="front-label">The front currently lies at <strong>TRENTON</strong>.</p>
+      </div>
+
+      <button id="start-skirmish" class="seal-btn big-btn" type="button">⚔️ START SKIRMISH</button>
+
+      <!-- Recent battles ticker -->
+      <div class="ticker" id="ticker" aria-hidden="false">
+        <div class="ticker-track" id="ticker-track"></div>
+      </div>
+
+      <!-- Player rank card -->
+      <div class="parchment-card rank-card" id="rank-card">
+        <div class="rank-row">
+          <span class="rank-insignia" id="rank-insignia">▪</span>
+          <div class="rank-meta">
+            <div class="rank-title" id="rank-title">Private</div>
+            <div class="rank-sub" id="rank-sub">0 pts · 0 battles</div>
+          </div>
+          <span class="rank-army" id="rank-army">🔔</span>
+        </div>
+        <div class="progress-rail"><div class="progress-fill" id="rank-progress"></div></div>
+        <div class="rank-next" id="rank-next">Next: Corporal (1,000)</div>
+      </div>
+
+      <!-- Leaderboards -->
+      <h2 class="section-title">☆ MUSTER ROLL ☆</h2>
+      <div class="tabs">
+        <button class="tab active" data-tab="soldiers" type="button">Soldiers</button>
+        <button class="tab" data-tab="war" type="button">The War</button>
+        <button class="tab" data-tab="traitors" type="button">Traitor Watch</button>
+      </div>
+      <div class="parchment-card board-card">
+        <div id="board-soldiers" class="board"></div>
+        <div id="board-war" class="board hidden"></div>
+        <div id="board-traitors" class="board hidden"></div>
+      </div>
+
+      <button id="copy-report" class="ghost-btn" type="button">📜 COPY WAR REPORT</button>
+      <button id="warroom-reenlist" class="link-btn" type="button">change name / switch sides</button>
+    </section>
+
+    <!-- ===================== BATTLE ===================== -->
+    <section id="screen-battle" class="screen hidden">
+      <div class="battle-head">
+        <div class="battle-name" id="battle-name">The Battle of —</div>
+        <div class="battle-progress" id="battle-progress">1 / 10</div>
+      </div>
+
+      <div class="fuse-rail"><div class="fuse-fill" id="fuse-fill"></div><span class="fuse-spark" id="fuse-spark">🔥</span></div>
+
+      <div class="parchment-card question-card">
+        <div class="cat-badge" id="cat-badge">TRIVIA</div>
+        <div class="q-prompt" id="q-prompt"></div>
+        <div class="choices" id="choices"></div>
+      </div>
+
+      <!-- Feedback dispatch box -->
+      <div class="feedback hidden" id="feedback">
+        <div class="feedback-inner" id="feedback-inner"></div>
+        <div class="tap-hint">tap to continue ▸</div>
+      </div>
+    </section>
+
+    <!-- ===================== AFTER-ACTION ===================== -->
+    <section id="screen-report" class="screen hidden">
+      <header class="warroom-head">
+        <div class="dispatch-stamp">AFTER-ACTION REPORT</div>
+        <h2 class="report-battle" id="report-battle">The Battle of —</h2>
+      </header>
+
+      <div id="rankup-banner" class="rankup-banner hidden"></div>
+
+      <div class="parchment-card report-card">
+        <div class="report-score" id="report-score">0</div>
+        <div class="report-line" id="report-correct">0 / 10 correct</div>
+        <div class="report-line" id="report-front"></div>
+        <div class="report-line espionage hidden" id="report-espionage"></div>
+      </div>
+
+      <h2 class="section-title hidden" id="casualties-head">☠️ CASUALTY REPORTS ☠️</h2>
+      <div id="casualties" class="casualties"></div>
+
+      <!-- Shown only when filing the after-action report FAILED. The battle's
+           points are unsaved until the report is filed, so we offer a retry
+           instead of discarding state.battle. -->
+      <div id="report-retry" class="parchment-card report-card hidden">
+        <div class="report-line" id="report-retry-msg">📡 The dispatch never reached HQ. Your points are unfiled.</div>
+        <button id="retry-finish" class="seal-btn" type="button">📨 RETRY FILING THE REPORT</button>
+      </div>
+
+      <div id="report-actions">
+        <button id="copy-dispatch" class="seal-btn" type="button">📜 COPY WAR DISPATCH</button>
+        <button id="back-to-warroom" class="ghost-btn" type="button">⮌ RETURN TO WAR ROOM</button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">A house divided · fought over New Jersey · no Knicks were harmed</footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
