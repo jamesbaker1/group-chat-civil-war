@@ -187,8 +187,8 @@
       "Bill Bradley"
     ],
     "answer_index": 0,
-    "flavor": "Correct. Walt 'Clyde' Frazier, still calling Knicks games and still the best-dressed man at the Garden.",
-    "roast": "☠️ Did not know Clyde is Walt Frazier. He's been on the broadcast for decades, posting and toasting without you.",
+    "flavor": "Correct. Walt 'Clyde' Frazier — two rings as a player, decades of posting and toasting on the Knicks broadcast, and forever the best-dressed man at the Garden.",
+    "roast": "☠️ Did not know Clyde is Walt Frazier. Decades on the broadcast, posting and toasting without you.",
     "difficulty": 2
   },
   {
@@ -659,7 +659,7 @@
     "id": "trivia-042",
     "category": "trivia",
     "city": "NY",
-    "prompt": "Which Knicks shooting guard infamously airballed a potential game-winner against the Bulls but was a fan-favorite scorer of the 90s, known for his bench scoring?",
+    "prompt": "Which undrafted 90s Knicks shooting guard threw down 'The Dunk' on the Bulls in the 1993 playoffs and won the 1997 Sixth Man of the Year award?",
     "choices": [
       "John Starks",
       "Allan Houston",
@@ -667,7 +667,7 @@
       "Greg Anthony"
     ],
     "answer_index": 0,
-    "flavor": "Correct. John Starks — from bagging groceries to the Garden. The Dunk over Jordan and Grant, a 1994 Finals Game 6 cold streak, and a permanent place in Knicks hearts.",
+    "flavor": "Correct. John Starks — from bagging groceries to the Garden. The Dunk over Horace Grant, the 2-for-18 Game 7 in the '94 Finals, and a permanent place in Knicks hearts.",
     "roast": "☠️ Forgot John Starks, the undrafted gunner who gave the 90s Knicks their soul. From a grocery store to MSG legend. Bench him.",
     "difficulty": 3
   },
@@ -883,7 +883,7 @@
     "id": "trivia-056",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which guard, acquired in a 2002 trade and a fan favorite, played alongside Allen Iverson and later coached in the Sixers organization?",
+    "prompt": "Which guard won the 2001 NBA Sixth Man of the Year award as Allen Iverson's running mate on the Finals-bound Sixers?",
     "choices": [
       "Eric Snow",
       "Aaron McKie",
@@ -891,7 +891,7 @@
       "George Lynch"
     ],
     "answer_index": 1,
-    "flavor": "Correct. Aaron McKie won Sixth Man of the Year in 2001 alongside Iverson during the Finals run, then returned to the franchise as an assistant and front-office figure.",
+    "flavor": "Correct. Aaron McKie won Sixth Man of the Year in 2001 alongside Iverson during the Finals run, then came back to the bench as a Sixers assistant coach.",
     "roast": "☠️ Forgot Aaron McKie, the 2001 Sixth Man on the Finals team. The glue guy next to Iverson. The bench remembers, even if you don't.",
     "difficulty": 3
   },
@@ -931,7 +931,7 @@
     "id": "trivia-059",
     "category": "trivia",
     "city": "PHI",
-    "prompt": "Which point guard, the 2008 NL MVP, was the longtime leadoff hitter and shortstop of the 2008 champion Phillies?",
+    "prompt": "Which shortstop, the 2007 NL MVP, was the longtime leadoff hitter of the 2008 champion Phillies?",
     "choices": [
       "Jimmy Rollins",
       "Chase Utley",
